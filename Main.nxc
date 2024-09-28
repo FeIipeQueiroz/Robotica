@@ -1,0 +1,63 @@
+/*********************************************************************
+*                           PBL 1 - Robótica.
+* Desenvolvido por: Alisson Rodruigues, Felipe Queiroz,
+*           Lara Esquivel e Paulo Queiroz.
+*
+*********************************************************************/
+
+/*O comando Fwd roda o robô para trás, já que definimos a sua "frente"
+o lado em que o sensor de luz está*/
+
+// BTcheck e bluetoothstatus
+// Ver direito na documentação
+task main()
+{
+ /* Reflexão das cores: !!ALTERA A CADA EXECUÇÃO!!
+ *  Branco: 75 e 76
+ *  Preto: >50
+ *  Prata: 86, 87
+ *  Vermelho: 75
+ *  Amarelo: 76
+ *  Azul: 46 a 65
+ */
+ SetSensorLight(IN_3, true);
+ SetSensorTouch(IN_2);
+ int state = 0;
+ int test = 0;
+ //OnRevSync(OUT_AC, 50, -100);
+
+  while(true){
+   OnRev(OUT_AC, -150);
+   if (Sensor(IN_3) < 55)
+   {
+       test = 1;
+   }
+   
+   if(test == 1){
+     OnFwd(OUT_AC, 100);
+     Wait(1000);
+     test = 2;
+   }
+   
+   if(test == 2){
+     OnRevSync(OUT_AC, 50, -100);
+     Wait(1200);
+     OnRev(OUT_AC,50);
+     Wait(1000);
+     OnRevSync(OUT_AC, 50, 100);
+     Wait(1200);
+     test = 0;
+   }
+ }
+
+ /*
+ * OnRevSync e OnFwdSync: rotaciona os motores sincronizados
+ * o 3° paramétro "turnpct" define a taxa de rotação das rodas:
+ * 100 rotaciona o robô para direita, no próprio eixo.
+ * -100 rotaciona o robô para esquerda, no próprio eixo.
+ */
+ 
+ //OnRevSync(OUT_AC, 50, -100);
+
+ //}
+}
