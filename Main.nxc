@@ -20,14 +20,23 @@ task main()
  *  Amarelo: 76
  *  Azul: 46 a 65
  */
- SetSensorLight(IN_3, true);
- SetSensorTouch(IN_2);
+ 
+ //Sensores iniciados seguindo a orientação do livro
+ 
+ SetSensorTouch(IN_1);
+ SetSensorLight(IN_2, true);
  SetSensorUltrasonic(IN_4);
 
  int state = 0;
  int test = 0;
  bool init = false;
- //OnRevSync(OUT_AC, 50, -100);
+ 
+ ResetTachoCount(OUT_AC);
+ MotorTachoCount(OUT_AC);
+
+ //ResetRotationCount("ports");
+ //MotorRotationCount("port")
+
 
  //if(SENSOR_2 == 1){
   //init = true;
@@ -36,7 +45,9 @@ task main()
   while(true){
   OnRev(OUT_AC, 75);
   
-   /*if(25 > SensorUS(IN_4)){
+
+  
+   if(25 > SensorUS(IN_4)){
     //PlaySound(SOUND_FAST_UP);
     Off(OUT_AC);
     Wait(1000);
@@ -45,7 +56,7 @@ task main()
     OnRevSync(OUT_AC, 50, 100);
     Wait(2400);
     //aq tem q ter um if pra determinar se é parede
-    /*OnRevSync(OUT_AC, 50, -100);
+    OnRevSync(OUT_AC, 50, -100);
     Wait(2400);
     // se n tiver parede ele roda e pega com a garra :D
     OnRevSync(OUT_AC, 50, 100);
@@ -56,8 +67,8 @@ task main()
     Off(OUT_B);
     test = 3;
 
-   } */
-   if(Sensor(IN_3) < 55)
+   }
+   if(Sensor(IN_2) < 55)
    {
        test = 1;
    }
