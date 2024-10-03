@@ -1,0 +1,39 @@
+#define DEG_TO_RPM 166.6667
+
+task main(){
+   long degA, degC;
+   long prev_degA = 0, prev_degC = 0, prev_tick = 0;
+   long dist, deg_dif, dt;
+   float rpm;
+   //A roda tem 56mm
+   //OnFwdSync(OUT_AC, 50, 0); //Usar a função sinc, muito mais precisa
+   OnFwd(OUT_A, 50);
+   
+   SetSensorTouch(IN_1);
+   
+   while(true)
+   {
+      if(SENSOR_1){
+       //OnFwdSync(OUT_AC, 50, 100); //Diferença de aprox. 435
+       //parar uma roda retorna difença de 2057 a 220
+      }
+      Wait(MS_500); // update display every 0.5 seconds
+      dt = CurrentTick() - prev_tick;
+      degA = MotorRotationCount(OUT_A) - prev_degA;
+      degC = MotorRotationCount(OUT_C) - prev_degC;
+      dist += (2*3.14*2.7*degA)/360;
+      TextOut(0, LCD_LINE2, "Distância: " + NumToStr(dist), true);
+
+      deg_dif = degA - degC;
+      TextOut(0, LCD_LINE3, "ang dif: " + NumToStr(deg_dif), true);
+      
+      rpm = (degA * DEG_TO_RPM) / dt;
+      TextOut(0, LCD_LINE4, "RPM: " + NumToStr(rpm), true);
+      
+      TextOut(0, LCD_LINE4, "Vel ang: " + NumToStr(rpm/2.7), true);
+      
+      prev_degA = MotorRotationCount(OUT_A);
+      prev_degC = MotorRotationCount(OUT_C);
+      prev_tick = CurrentTick();
+   }
+}
