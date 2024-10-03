@@ -1,0 +1,9 @@
+task main(){
+     SetSensorLight(IN_3, true);
+     SetSensorTouch(IN_2);
+     SetSensorUltrasonic(IN_4);
+     OnRev(OUT_AC, 50);
+     Wait(1000);
+     OnFwd(OUT_AC, 50;
+     Wait(1000);
+}
