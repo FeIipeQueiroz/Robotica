@@ -1,0 +1,16 @@
+
+#DEFINE R 22.5;
+
+ task main()
+ {
+  SetSensorLight(IN_2, true);
+  SetSensorTouch(IN_1);
+  SetSensorUltrasonic(IN_4);
+  SensorUS(IN_4);
+  while(true){
+   if(25 > SensorUS(IN_4)){
+    Off(OUT_AC);
+    RotateMotor(OUT_AC, 50, );
+   }
+  }
+ }

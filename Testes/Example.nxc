@@ -1,0 +1,33 @@
+// Display RPM of motor attached to the port MOTOR while running at full speed.
+// The program runs continously until stopped by pressing the gray NXT button.
+// Requires NXT firmware 1.28 or later (uses floating point arithmetic).
+// CurrentTick returns milliseconds in a long integer.
+// MotorRotationCount returns degrees in a long integer.
+#define MOTOR OUT_AC
+#define FULL_SPEED 25
+#define DEG_TO_RPM 166.6667 // converts degrees per millisecond to RPM
+long prev_tick;
+long prev_deg = 0;
+string rpm_msg()
+{
+   long dt = CurrentTick() - prev_tick;
+   //motor rotation cout só pega um motor
+   long deg = MotorTachoCount(OUT_A) - prev_deg;
+   float rpm = deg * DEG_TO_RPM / dt;
+   //motor rotation cout só pega um motor
+   prev_deg = MotorTachoCount(OUT_A);
+   prev_tick = CurrentTick();
+   return "RPM: "+ NumToStr(rpm);
+}
+task main()
+{
+   prev_tick = CurrentTick();
+   //OnRev(MOTOR, FULL_SPEED);
+   OnFwd(MOTOR, FULL_SPEED);
+   while (true)
+   {
+      Wait(MS_500); // update display every 0.5 seconds
+      TextOut(0, LCD_LINE2, rpm_msg(), true);
+   }
+}
+
