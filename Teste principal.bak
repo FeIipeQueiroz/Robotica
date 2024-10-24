@@ -1,0 +1,89 @@
+/*********************************************************************
+*                           PBL 1 - Robótica.
+* Desenvolvido por: Alisson Rodruigues, Felipe Queiroz,
+*           Lara Esquivel e Paulo Queiroz.
+*
+*********************************************************************/
+#define DEG_TO_RPM 166.6667
+
+
+task odometria(){
+ //Declaração de variáveis
+ long prev_degA = 0, prev_degC = 0, prev_tick = 0, deltaDeg = 0;
+ long francis_diam = 16.5, raio = 2.8;
+ long degA, degC, dist, deg_dif, dt;
+ float rpm, AngA, AngC, deg;
+ bool comObjeto = 0;
+ int state = 0;
+
+ //Cálculo da velocidade e velocidade angular
+ while(true){
+  Wait(MS_100);
+  dt = CurrentTick() - prev_tick;
+  degA = MotorRotationCount(OUT_A) - prev_degA;
+  degC = MotorRotationCount(OUT_C) - prev_degC;
+  dist += (2*3.14*raio*degA)/360;
+  rpm = (degA * DEG_TO_RPM) / dt;
+  AngA = ((degA)/(2*francis_diam));
+  AngC = ((degC)/(2*francis_diam));
+  deg = (AngA - AngC)*(180/(3.14*10)); // N sei pq tem q ser 10pi
+  deltaDeg += deg;
+  deg_dif = degA - degC;
+
+  DrawTextType dtArgs;
+  dtArgs.Location.X = 0;
+  dtArgs.Location.Y = LCD_LINE1;
+  dtArgs.Options = 0x01;
+  dtArgs.Text = "Dif ang:" + NumToStr(deg);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE2;
+  dtArgs.Options = 0x00;
+  dtArgs.Text = "Dist:" + NumToStr(dist);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE3;
+  dtArgs.Text = "DifAng:" + NumToStr(deg_dif);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE4;
+  dtArgs.Text = "RPM:" + NumToStr(rpm);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE5;
+  dtArgs.Text = "Ang:" + NumToStr(deltaDeg);
+  SysDrawText(dtArgs);
+
+ prev_degA = MotorRotationCount(OUT_A);
+ prev_degC = MotorRotationCount(OUT_C);
+ prev_tick = CurrentTick();
+ }
+}
+
+/*O comando Fwd roda o robô para trás, já que definimos a sua "frente"
+o lado em que o sensor de luz está*/
+
+// BTcheck e bluetoothstatus
+// Ver direito na documentação
+task main()
+{
+ /* Reflexão das cores: !!ALTERA A CADA EXECUÇÃO!!
+ *  Branco: 75 e 76
+ *  Preto: >50
+ *  Prata: 86, 87
+ *  Vermelho: 75
+ *  Amarelo: 76
+ *  Azul: 46 a 65
+ */
+
+ //Sensores iniciados seguindo a orientação do livro
+ SetSensorTouch(IN_1);
+ SetSensorLight(IN_2, true);
+ SetSensorUltrasonic(IN_4);
+ 
+ while(SENSOR_1 != 1){}
+ Wait(100);
+ 
+ OnRevSync(OUT_AC, 50, 0);
+
+ StartTask(odometria);
+ while(true){
+
+ }
+}

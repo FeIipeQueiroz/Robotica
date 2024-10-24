@@ -18,10 +18,12 @@ task main(){
    
    SetSensorTouch(IN_1);
    
-   OnRevSync(OUT_AC, 50, turn);
+
+   
 
    while(true)
    {
+      OnRevSync(OUT_AC, 50, turn);
       Wait(MS_100);
       dt = CurrentTick() - prev_tick;
       degA = MotorRotationCount(OUT_A) - prev_degA;

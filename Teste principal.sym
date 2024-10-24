@@ -1,0 +1,606 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__odometria_7qG2_francis_diam_7qG2_000	6	1	0	4	3
+1	__odometria_7qG2_deltaDeg_7qG2_000	6	1	4	4	4
+2	__odometria_7qG2_prev_tick_7qG2_000	6	1	8	4	3
+3	__constValf2P8	10	0	12	4	1
+4	__odometria_7qG2_raio_7qG2_000	6	1	16	4	2
+5	__constValf16P5	10	0	20	4	1
+6	__odometria_7qG2_prev_degC_7qG2_000	6	1	24	4	3
+7	__unsigned_stack_001odometria	5	1	28	4	2
+8	__signed_stack_002odometria	6	1	32	4	4
+9	__signed_stack_001odometria	6	1	36	4	10
+10	__odometria_7qG2_prev_degA_7qG2_000	6	1	40	4	3
+11	__float_stack_002odometria	10	1	44	4	2
+12	__float_stack_001odometria	10	1	48	4	10
+13	__odometria_7qG2_degA_7qG2_000	6	1	52	4	5
+14	__constValf3P14	10	0	56	4	1
+15	__Wait_7qG2_ms_7qG2_000_inline_odometria	5	1	60	4	2
+16	__odometria_7qG2_deg_7qG2_000	10	1	64	4	3
+17	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	68	4	2
+18	__constValf31P4	10	0	72	4	1
+19	__constValf166P6667	10	0	76	4	1
+20	__odometria_7qG2_AngC_7qG2_000	10	1	80	4	2
+21	__odometria_7qG2_deg_dif_7qG2_000	6	1	84	4	2
+22	__odometria_7qG2_dist_7qG2_000	6	1	88	4	3
+23	__odometria_7qG2_degC_7qG2_000	6	1	92	4	3
+24	__odometria_7qG2_AngA_7qG2_000	10	1	96	4	2
+25	__odometria_7qG2_rpm_7qG2_000	10	1	100	4	2
+26	__odometria_7qG2_dt_7qG2_000	6	1	104	4	2
+27	__D0odometria	6	1	108	4	14
+28	__DF0odometria	10	1	112	4	10
+29	__D0main	6	1	116	4	10
+30	__OnRevMutex	9	0	120	4	2
+31	__ResetSensorMutex	9	0	124	4	6
+32	__DU0SetSensorLight_inline_main	5	1	128	4	5
+33	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	132	4	2
+34	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	136	4	5
+35	__D0SetSensorLight_inline_main	6	1	140	4	2
+36	__signed_stack_001main	6	1	144	4	4
+37	__constVal180	4	0	148	2	1
+38	__constVal360	4	0	150	2	1
+39	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	152	1	2
+40	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	153	1	4
+41	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	154	1	2
+42	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	155	1	2
+43	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	156	1	2
+44	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	157	1	2
+45	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	158	1	2
+46	____initialize_global_data_return	1	1	159	1	3
+47	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	160	1	2
+48	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	161	1	2
+49	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	162	1	2
+50	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	163	1	2
+51	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	164	1	4
+52	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	165	1	4
+53	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	166	1	2
+54	__constVal7	2	0	167	1	1
+55	__PFTmp	1	1	168	1	1
+56	__constVal2	2	0	169	1	3
+57	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	170	1	2
+58	__odometria_Spawner_return	1	1	171	1	1
+59	__constVal63	2	0	172	1	1
+60	__constVal96	2	0	173	1	1
+61	____ResetSensorSubroutine_return	1	1	174	1	5
+62	__constVal32	2	0	175	1	4
+63	__OnRev_Tmp	2	1	176	1	2
+64	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	177	1	2
+65	__constVal1	2	0	178	1	3
+66	__ResetSensorTmp	1	1	179	1	2
+67	__ResetSensorPort	1	1	180	1	5
+68	__constVal0	2	1	181	1	4
+69	__odometria_7qG2_dtArgs_7qG2_001	8	0	4	16	23
+70	__odometria_7qG2_dtArgs_7qG2_001.Result	2	1	184	1	23
+71	__odometria_7qG2_dtArgs_7qG2_001.Location	8	0	2	4	23
+72	__odometria_7qG2_dtArgs_7qG2_001.Location.X	4	1	188	2	23
+73	__odometria_7qG2_dtArgs_7qG2_001.Location.Y	4	1	190	2	23
+74	__odometria_7qG2_dtArgs_7qG2_001.Text	7	0	192	4	23
+75	__odometria_7qG2_dtArgs_7qG2_001.Text.Text_type	1	0	0	1	0
+76	__odometria_7qG2_dtArgs_7qG2_001.Options	5	1	196	4	23
+77	__OUT_AC	7	0	200	4	1
+78	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+79	__ArrHelper__odometria_244_0	7	0	202	4	10
+80	__ArrHelper__odometria_244_0.__ArrHelper__odometria_244_0_type	1	0	0	1	0
+81	__ArrHelper__odometria_244_1	7	0	204	4	10
+82	__ArrHelper__odometria_244_1.__ArrHelper__odometria_244_1_type	1	0	0	1	0
+83	__strretvalodometria	7	0	206	4	10
+84	__strretvalodometria.__strretvalodometria_type	1	0	0	1	0
+85	__strbufodometria	7	0	208	4	20
+86	__strbufodometria.__strbufodometria_type	1	0	0	1	0
+87	__constStr0011	7	0	210	4	1
+88	__constStr0011.__constStr0011_type	1	1	0	1	0
+89	__constStr0012	7	0	212	4	1
+90	__constStr0012.__constStr0012_type	1	1	0	1	0
+91	__constStr0010	7	0	214	4	1
+92	__constStr0010.__constStr0010_type	1	1	0	1	0
+93	__constStr0013	7	0	216	4	1
+94	__constStr0013.__constStr0013_type	1	1	0	1	0
+95	__constStr0009	7	0	218	4	1
+96	__constStr0009.__constStr0009_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	75	0	#line 75 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	76	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	75	2	#line 75 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	75	2	#line 75 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	76	2		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	75	5	#line 75 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	4302	5	#line 4302 "NXCDefs.h"
+0	4303	5	#pragma macro 6
+0	4303	5		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	9		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	13		acquire __ResetSensorMutex
+0	4303	14		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4303	18		release __ResetSensorMutex
+0	4329	19	#line 4329 "NXCDefs.h"
+0	4302	19	#line 4302 "NXCDefs.h"
+0	76	19	#line 76 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	76	19	#line 76 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	77	19		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	76	22	#line 76 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	76	22	#line 76 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	77	22		set __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, 1
+0	76	25	#line 76 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	27	#line 4313 "NXCDefs.h"
+0	4313	27	#line 4313 "NXCDefs.h"
+0	4314	27		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	29	#line 4313 "NXCDefs.h"
+0	4314	29		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	32	#line 4313 "NXCDefs.h"
+0	4314	32		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4314	35		set __DU0SetSensorLight_inline_main, 5
+0	4313	38	#line 4313 "NXCDefs.h"
+0	4313	38	#line 4313 "NXCDefs.h"
+0	4314	38		jmp __001__ASM_Label_5
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4314	40		set __DU0SetSensorLight_inline_main, 6
+0	4313	43	#line 4313 "NXCDefs.h"
+0	4313	43	#line 4313 "NXCDefs.h"
+0	4314	43		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	45	#line 4247 "NXCDefs.h"
+0	4248	45		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	49	#line 4247 "NXCDefs.h"
+0	4314	49	#line 4314 "NXCDefs.h"
+0	4314	49	#line 4314 "NXCDefs.h"
+0	4315	49		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4315	51		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	54	#line 4314 "NXCDefs.h"
+0	4260	54	#line 4260 "NXCDefs.h"
+0	4261	54		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	58	#line 4260 "NXCDefs.h"
+0	4315	58	#line 4315 "NXCDefs.h"
+0	4315	58	#line 4315 "NXCDefs.h"
+0	4316	58		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	60	#line 4315 "NXCDefs.h"
+0	4278	60	#line 4278 "NXCDefs.h"
+0	4279	60	#pragma macro 4
+0	4279	60		acquire __ResetSensorMutex
+0	4279	61		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main
+0	4279	63		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	65		release __ResetSensorMutex
+0	4421	66	#line 4421 "NXCDefs.h"
+0	4278	66	#line 4278 "NXCDefs.h"
+0	4316	66	#line 4316 "NXCDefs.h"
+0	77	66	#line 77 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	77	66	#line 77 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	78	66		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 3
+0	77	69	#line 77 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	4352	69	#line 4352 "NXCDefs.h"
+0	4353	69		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
+0	4352	71	#line 4352 "NXCDefs.h"
+0	4352	71	#line 4352 "NXCDefs.h"
+0	4353	71		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	4342	73	#line 4342 "NXCDefs.h"
+0	4343	73		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	75	#line 4342 "NXCDefs.h"
+0	4342	75	#line 4342 "NXCDefs.h"
+0	4343	75		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	77	#line 4342 "NXCDefs.h"
+0	4343	77		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	80	#line 4342 "NXCDefs.h"
+0	4343	80		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	83	#line 4342 "NXCDefs.h"
+0	4343	83		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4342	86	#line 4342 "NXCDefs.h"
+0	4342	86	#line 4342 "NXCDefs.h"
+0	4343	86		jmp __001__001__ASM_Label_37
+0	4342	88	#line 4342 "NXCDefs.h"
+0	4343	88		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4342	91	#line 4342 "NXCDefs.h"
+0	4342	91	#line 4342 "NXCDefs.h"
+0	4343	91		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4247	93	#line 4247 "NXCDefs.h"
+0	4248	93		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4247	97	#line 4247 "NXCDefs.h"
+0	4343	97	#line 4343 "NXCDefs.h"
+0	4343	97	#line 4343 "NXCDefs.h"
+0	4344	97		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4343	99	#line 4343 "NXCDefs.h"
+0	4343	99	#line 4343 "NXCDefs.h"
+0	4344	99		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4343	102	#line 4343 "NXCDefs.h"
+0	4260	102	#line 4260 "NXCDefs.h"
+0	4261	102		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	4260	106	#line 4260 "NXCDefs.h"
+0	4344	106	#line 4344 "NXCDefs.h"
+0	4344	106	#line 4344 "NXCDefs.h"
+0	4345	106		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4344	108	#line 4344 "NXCDefs.h"
+0	4278	108	#line 4278 "NXCDefs.h"
+0	4279	108	#pragma macro 4
+0	4279	108		acquire __ResetSensorMutex
+0	4279	109		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main
+0	4279	111		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	113		release __ResetSensorMutex
+0	4522	114	#line 4522 "NXCDefs.h"
+0	4278	114	#line 4278 "NXCDefs.h"
+0	4345	114	#line 4345 "NXCDefs.h"
+0	4352	114	#line 4352 "NXCDefs.h"
+0	79	114	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	79	114	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	80	114		getin __signed_stack_001main, __constVal0, 4
+0	79	118	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	79	118	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	80	118		set __D0main, 1
+0	79	121	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	80	121		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	79	125	#line 79 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	80	125		brtst 4, __ASM_Label_594, __D0main
+0	80	128	#line 80 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	81	128		jmp __ASM_Label_593
+0	80	130	#line 80 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	80	130	#line 80 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	81	130		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	80	133	#line 80 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	8551	133	#line 8551 "NXCDefs.h"
+0	8552	133		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	136	#line 8551 "NXCDefs.h"
+0	82	136	#line 82 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	82	136	#line 82 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	83	136		set __signed_stack_001main, 50
+0	82	139	#line 82 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	82	139	#line 82 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	83	139		set __D0main, 0
+0	84	142	#line 84 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	85	142	#pragma macro 10
+0	85	142		acquire __OnRevMutex
+0	85	143		neg __OnRev_Tmp, __signed_stack_001main
+0	85	146		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	85	169		release __OnRevMutex
+0	4566	170	#line 4566 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	84	170	#line 84 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	85	170	#line 85 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	86	170		subcall __odometria_Spawner, __odometria_Spawner_return
+0	85	172	#line 85 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	85	172	#line 85 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	86	172		set __D0main, 1
+0	87	175	#line 87 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	88	175		tst 5, __D0main, __D0main
+0	87	178	#line 87 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	88	178		brtst 4, __ASM_Label_604, __D0main
+0	90	181	#line 90 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	91	181		jmp __ASM_Label_603
+0	90	183	#line 90 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+0	91	183		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	11	0	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	12	0		set __odometria_7qG2_prev_degA_7qG2_000, 0
+2	11	3	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	11	3	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	12	3		set __odometria_7qG2_prev_degC_7qG2_000, 0
+2	11	6	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	11	6	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	12	6		set __odometria_7qG2_prev_tick_7qG2_000, 0
+2	11	9	#line 11 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	12	9	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	13	9		set __odometria_7qG2_deltaDeg_7qG2_000, 0
+2	12	12	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	12	12	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	13	12		mov __odometria_7qG2_francis_diam_7qG2_000, __constValf16P5
+2	12	14	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	13	14	#line 13 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	14	14		mov __odometria_7qG2_raio_7qG2_000, __constValf2P8
+2	13	16	#line 13 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	16	16	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	16	16	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	19	16	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	19	16	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	19	16	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	20	16		set __D0odometria, 1
+2	20	19	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	21	19		tst 5, __D0odometria, __D0odometria
+2	20	22	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	21	22		brtst 4, __ASM_Label_506, __D0odometria
+2	20	25	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	21	25		set __Wait_7qG2_ms_7qG2_000_inline_odometria, 100
+2	20	28	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	8551	28	#line 8551 "NXCDefs.h"
+2	8552	28		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_odometria
+2	8551	31	#line 8551 "NXCDefs.h"
+2	21	31	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	21	31	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	31		gettick __unsigned_stack_001odometria
+2	21	33	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	33	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	33	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	33		sub __odometria_7qG2_dt_7qG2_000, __unsigned_stack_001odometria, __odometria_7qG2_prev_tick_7qG2_000
+2	22	37	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	37	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	37	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	22	37	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	37		getout __signed_stack_001odometria, __constVal0, 14
+2	22	41	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	41	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	41	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	41		sub __odometria_7qG2_degA_7qG2_000, __signed_stack_001odometria, __odometria_7qG2_prev_degA_7qG2_000
+2	23	45	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	45	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	23	45	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	45		getout __signed_stack_001odometria, __constVal2, 14
+2	23	49	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	49	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	49	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	49		sub __odometria_7qG2_degC_7qG2_000, __signed_stack_001odometria, __odometria_7qG2_prev_degC_7qG2_000
+2	24	53	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	53	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	53	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	53		set __signed_stack_001odometria, 2
+2	24	56	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	56	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	56	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	56		mul __float_stack_001odometria, __signed_stack_001odometria, __constValf3P14
+2	24	60	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	60	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	60	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	60		mul __float_stack_001odometria, __float_stack_001odometria, __odometria_7qG2_raio_7qG2_000
+2	24	64	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	64	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	24	64	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	64		mul __float_stack_001odometria, __float_stack_001odometria, __odometria_7qG2_degA_7qG2_000
+2	24	68	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	68	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	68		mov __DF0odometria, __constVal360
+2	25	70	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	70		div __DF0odometria, __float_stack_001odometria, __DF0odometria
+2	25	74	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	74		add __odometria_7qG2_dist_7qG2_000, __odometria_7qG2_dist_7qG2_000, __DF0odometria
+2	25	78	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	78	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	78	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	78	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	25	78	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	78		mul __float_stack_001odometria, __odometria_7qG2_degA_7qG2_000, __constValf166P6667
+2	25	82	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	82	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	82	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	82		div __odometria_7qG2_rpm_7qG2_000, __float_stack_001odometria, __odometria_7qG2_dt_7qG2_000
+2	26	86	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	86	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	86	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	86		mov __signed_stack_001odometria, __odometria_7qG2_degA_7qG2_000
+2	26	88	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	88	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	88		set __signed_stack_002odometria, 2
+2	26	91	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	91	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	26	91	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	91		mul __D0odometria, __signed_stack_002odometria, __odometria_7qG2_francis_diam_7qG2_000
+2	26	95	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	95		div __odometria_7qG2_AngA_7qG2_000, __signed_stack_001odometria, __D0odometria
+2	27	99	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	99	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	99	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	99		mov __signed_stack_001odometria, __odometria_7qG2_degC_7qG2_000
+2	27	101	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	101	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	101		set __signed_stack_002odometria, 2
+2	27	104	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	104	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	27	104	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	104		mul __D0odometria, __signed_stack_002odometria, __odometria_7qG2_francis_diam_7qG2_000
+2	27	108	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	108		div __odometria_7qG2_AngC_7qG2_000, __signed_stack_001odometria, __D0odometria
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	112	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	29	112		sub __float_stack_001odometria, __odometria_7qG2_AngA_7qG2_000, __odometria_7qG2_AngC_7qG2_000
+2	28	116	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	116	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	29	116		mov __float_stack_002odometria, __constVal180
+2	28	118	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	118	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	28	118	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	29	118		div __DF0odometria, __float_stack_002odometria, __constValf31P4
+2	29	122	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	30	122		mul __odometria_7qG2_deg_7qG2_000, __float_stack_001odometria, __DF0odometria
+2	29	126	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	29	126	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	30	126	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	30	126	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	31	126		add __odometria_7qG2_deltaDeg_7qG2_000, __odometria_7qG2_deltaDeg_7qG2_000, __odometria_7qG2_deg_7qG2_000
+2	30	130	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	30	130	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	30	130	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	32	130	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	32	130	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	33	130		sub __odometria_7qG2_deg_dif_7qG2_000, __odometria_7qG2_degA_7qG2_000, __odometria_7qG2_degC_7qG2_000
+2	32	134	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	32	134	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	34	134	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	35	134		set __odometria_7qG2_dtArgs_7qG2_001.Location.X, 0
+2	34	137	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	34	137	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	35	137	#line 35 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	36	137		set __odometria_7qG2_dtArgs_7qG2_001.Location.Y, 56
+2	35	140	#line 35 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	35	140	#line 35 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	36	140	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	140		set __odometria_7qG2_dtArgs_7qG2_001.Options, 1
+2	36	143	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	36	143	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	36	143	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	143		mov __ArrHelper__odometria_244_0, __constStr0009
+2	36	145	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	145		mov __DF0odometria, __odometria_7qG2_deg_7qG2_000
+2	37	147	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	147		numtostr __strretvalodometria, __DF0odometria
+2	37	150	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	150		strcat __strbufodometria, __strretvalodometria
+2	37	154	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	154		mov __ArrHelper__odometria_244_1, __strbufodometria
+2	37	156	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	156		strcat __strbufodometria, __ArrHelper__odometria_244_0, __ArrHelper__odometria_244_1
+2	37	161	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	161		mov __odometria_7qG2_dtArgs_7qG2_001.Text, __strbufodometria
+2	37	163	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	163	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	39	163	#pragma macro 4
+2	39	163	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	39	163		syscall 13, __odometria_7qG2_dtArgs_7qG2_001
+2	37	166	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	166	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	166	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	37	166	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	166	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	38	166	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	39	166	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	40	166		set __odometria_7qG2_dtArgs_7qG2_001.Location.Y, 48
+2	39	169	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	39	169	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	40	169	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	169		set __odometria_7qG2_dtArgs_7qG2_001.Options, 0
+2	40	172	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	40	172	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	40	172	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	172		mov __ArrHelper__odometria_244_0, __constStr0010
+2	40	174	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	174		mov __D0odometria, __odometria_7qG2_dist_7qG2_000
+2	41	176	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	176		numtostr __strretvalodometria, __D0odometria
+2	41	179	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	179		strcat __strbufodometria, __strretvalodometria
+2	41	183	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	183		mov __ArrHelper__odometria_244_1, __strbufodometria
+2	41	185	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	185		strcat __strbufodometria, __ArrHelper__odometria_244_0, __ArrHelper__odometria_244_1
+2	41	190	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	190		mov __odometria_7qG2_dtArgs_7qG2_001.Text, __strbufodometria
+2	41	192	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	192	#line 42 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	43	192	#pragma macro 4
+2	43	192	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	43	192		syscall 13, __odometria_7qG2_dtArgs_7qG2_001
+2	41	195	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	195	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	195	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	41	195	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	195	#line 42 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	42	195	#line 42 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	43	195	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	195		set __odometria_7qG2_dtArgs_7qG2_001.Location.Y, 40
+2	43	198	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	43	198	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	43	198	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	198		mov __ArrHelper__odometria_244_0, __constStr0011
+2	43	200	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	200		mov __D0odometria, __odometria_7qG2_deg_dif_7qG2_000
+2	44	202	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	202		numtostr __strretvalodometria, __D0odometria
+2	44	205	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	205		strcat __strbufodometria, __strretvalodometria
+2	44	209	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	209		mov __ArrHelper__odometria_244_1, __strbufodometria
+2	44	211	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	211		strcat __strbufodometria, __ArrHelper__odometria_244_0, __ArrHelper__odometria_244_1
+2	44	216	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	216		mov __odometria_7qG2_dtArgs_7qG2_001.Text, __strbufodometria
+2	44	218	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	218	#line 45 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	46	218	#pragma macro 4
+2	46	218	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	46	218		syscall 13, __odometria_7qG2_dtArgs_7qG2_001
+2	44	221	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	221	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	221	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	44	221	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	221	#line 45 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	45	221	#line 45 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	46	221	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	221		set __odometria_7qG2_dtArgs_7qG2_001.Location.Y, 32
+2	46	224	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	46	224	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	46	224	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	224		mov __ArrHelper__odometria_244_0, __constStr0012
+2	46	226	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	226		mov __DF0odometria, __odometria_7qG2_rpm_7qG2_000
+2	47	228	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	228		numtostr __strretvalodometria, __DF0odometria
+2	47	231	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	231		strcat __strbufodometria, __strretvalodometria
+2	47	235	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	235		mov __ArrHelper__odometria_244_1, __strbufodometria
+2	47	237	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	237		strcat __strbufodometria, __ArrHelper__odometria_244_0, __ArrHelper__odometria_244_1
+2	47	242	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	242		mov __odometria_7qG2_dtArgs_7qG2_001.Text, __strbufodometria
+2	47	244	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	244	#line 48 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	49	244	#pragma macro 4
+2	49	244	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	49	244		syscall 13, __odometria_7qG2_dtArgs_7qG2_001
+2	47	247	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	247	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	247	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	47	247	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	247	#line 48 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	48	247	#line 48 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	49	247	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	247		set __odometria_7qG2_dtArgs_7qG2_001.Location.Y, 24
+2	49	250	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	49	250	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	49	250	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	250		mov __ArrHelper__odometria_244_0, __constStr0013
+2	49	252	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	252		mov __D0odometria, __odometria_7qG2_deltaDeg_7qG2_000
+2	50	254	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	254		numtostr __strretvalodometria, __D0odometria
+2	50	257	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	257		strcat __strbufodometria, __strretvalodometria
+2	50	261	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	261		mov __ArrHelper__odometria_244_1, __strbufodometria
+2	50	263	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	263		strcat __strbufodometria, __ArrHelper__odometria_244_0, __ArrHelper__odometria_244_1
+2	50	268	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	268		mov __odometria_7qG2_dtArgs_7qG2_001.Text, __strbufodometria
+2	50	270	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	270	#line 51 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	52	270	#pragma macro 4
+2	52	270	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	52	270		syscall 13, __odometria_7qG2_dtArgs_7qG2_001
+2	50	273	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	273	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	273	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	50	273	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	52	273	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	51	273	#line 51 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	53	273	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	273		getout __odometria_7qG2_prev_degA_7qG2_000, __constVal0, 14
+2	53	277	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	53	277	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	277	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	55	277		getout __odometria_7qG2_prev_degC_7qG2_000, __constVal2, 14
+2	54	281	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	281	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	281	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	55	281		gettick __odometria_7qG2_prev_tick_7qG2_000
+2	54	283	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	283	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	54	283	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	63	283	#line 63 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	64	283		jmp __ASM_Label_505
+2	63	285	#line 63 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+2	64	285		exit -1, -1
+3	0	0		subret __odometria_Spawner_return
+4	0	0		exit 0, 1
+5	91	0	#line 91 "C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc"
+5	92	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc
+1	__ResetSensorSubroutine	186	NXTDefs.h
+2	odometria	199	C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc
+3	__odometria_Returner	487	C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc
+4	__odometria_Spawner	489	C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc
+5	__initialize_global_data	492	C:\Users\FELIPE\Documents\coisas\Robotica\Teste principal.nxc

@@ -24,14 +24,14 @@ task main()
 
      if((Sensor(IN_2) < 24 && Sensor(IN_2) > 15))
      {
-        TextOut(0, LCD_LINE3, "Luz: " + NumToStr(Sensor(IN_2)));
-        TextOut(0, LCD_LINE3, "Vermelho!!!");
+          TextOut(0, LCD_LINE3, "Luz: " + NumToStr(Sensor(IN_2)), true);
+        //TextOut(0, LCD_LINE3, "Vermelho!!!", true);
         //OnFwdSync(OUT_AC, 30, 0);
         SetSensorLight(IN_2, true);
         Wait(500);
      } else {
-        TextOut(0, LCD_LINE3, "Luz: " + NumToStr(Sensor(IN_2)));
-        TextOut(0, LCD_LINE3, "Era Fic");
+        TextOut(0, LCD_LINE3, "Luz: " + NumToStr(Sensor(IN_2)), true);
+        //TextOut(0, LCD_LINE3, "Era Fic", true);
         SetSensorLight(IN_2, true);
         //    OnRevSync(OUT_AC, 30, 0);
         Wait(300);

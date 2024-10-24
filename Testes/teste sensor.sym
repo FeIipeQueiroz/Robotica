@@ -1,0 +1,562 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	0	4	2
+1	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	4	4	5
+2	__DU0SetSensorLight_inline_main	5	1	8	4	20
+3	__D0SetSensorLight_inline_main	6	1	12	4	8
+4	__D0main	6	1	16	4	33
+5	__signed_stack_001main	6	1	20	4	18
+6	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	24	4	8
+7	__signed_stack_002main	6	1	28	4	10
+8	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	32	1	8
+9	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	33	1	8
+10	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	34	1	8
+11	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	35	1	8
+12	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	36	1	2
+13	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	37	1	2
+14	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	38	1	2
+15	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	39	1	2
+16	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	40	1	2
+17	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	41	1	4
+18	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	42	1	4
+19	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	43	1	4
+20	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	44	1	2
+21	__ResetSensorTmp	1	1	45	1	2
+22	__ResetSensorPort	1	1	46	1	8
+23	____ResetSensorSubroutine_return	1	1	47	1	8
+24	__PFTmp	1	1	48	1	1
+25	__constVal1	2	0	49	1	10
+26	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	50	1	20
+27	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	51	1	8
+28	__constVal32	2	0	52	1	1
+29	____initialize_global_data_return	1	1	53	1	3
+30	__TextOutArgs	8	0	4	16	30
+31	__TextOutArgs.Result	2	1	56	1	30
+32	__TextOutArgs.Location	8	0	2	4	30
+33	__TextOutArgs.Location.X	4	1	60	2	30
+34	__TextOutArgs.Location.Y	4	1	62	2	30
+35	__TextOutArgs.Text	7	0	64	4	30
+36	__TextOutArgs.Text.Text_type	1	0	0	1	0
+37	__TextOutArgs.Options	5	1	68	4	30
+38	__strretvalmain	7	0	72	4	6
+39	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+40	__constStr0010	7	0	74	4	1
+41	__constStr0010.__constStr0010_type	1	1	0	1	0
+42	__constStr0011	7	0	76	4	1
+43	__constStr0011.__constStr0011_type	1	1	0	1	0
+44	__constStr0009	7	0	78	4	3
+45	__constStr0009.__constStr0009_type	1	1	0	1	0
+46	__ArrHelper__main_244_0	7	0	80	4	6
+47	__ArrHelper__main_244_0.__ArrHelper__main_244_0_type	1	0	0	1	0
+48	__ArrHelper__main_244_1	7	0	82	4	6
+49	__ArrHelper__main_244_1.__ArrHelper__main_244_1_type	1	0	0	1	0
+50	__strbufmain	7	0	84	4	16
+51	__strbufmain.__strbufmain_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	2	2	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	3	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	2	5	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	2	5	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	3	5		set __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, 1
+0	2	8	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4313	8	#line 4313 "NXCDefs.h"
+0	4314	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	10	#line 4313 "NXCDefs.h"
+0	4313	10	#line 4313 "NXCDefs.h"
+0	4314	10		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	12	#line 4313 "NXCDefs.h"
+0	4314	12		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	15	#line 4313 "NXCDefs.h"
+0	4314	15		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	18	#line 4313 "NXCDefs.h"
+0	4314	18		set __DU0SetSensorLight_inline_main, 5
+0	4313	21	#line 4313 "NXCDefs.h"
+0	4313	21	#line 4313 "NXCDefs.h"
+0	4314	21		jmp __001__ASM_Label_5
+0	4313	23	#line 4313 "NXCDefs.h"
+0	4314	23		set __DU0SetSensorLight_inline_main, 6
+0	4313	26	#line 4313 "NXCDefs.h"
+0	4313	26	#line 4313 "NXCDefs.h"
+0	4314	26		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	28	#line 4247 "NXCDefs.h"
+0	4248	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	32	#line 4247 "NXCDefs.h"
+0	4314	32	#line 4314 "NXCDefs.h"
+0	4314	32	#line 4314 "NXCDefs.h"
+0	4315	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	34	#line 4314 "NXCDefs.h"
+0	4314	34	#line 4314 "NXCDefs.h"
+0	4315	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	37	#line 4314 "NXCDefs.h"
+0	4260	37	#line 4260 "NXCDefs.h"
+0	4261	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	41	#line 4260 "NXCDefs.h"
+0	4315	41	#line 4315 "NXCDefs.h"
+0	4315	41	#line 4315 "NXCDefs.h"
+0	4316	41		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	43	#line 4315 "NXCDefs.h"
+0	4278	43	#line 4278 "NXCDefs.h"
+0	4279	43	#pragma macro 4
+0	4279	43		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3746	47	#line 3746 "NXCDefs.h"
+0	4278	47	#line 4278 "NXCDefs.h"
+0	4316	47	#line 4316 "NXCDefs.h"
+0	3	47	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	3	47	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4	47		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3	50	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4302	50	#line 4302 "NXCDefs.h"
+0	4303	50	#pragma macro 6
+0	4303	50		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	54		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	58		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	60		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3759	62	#line 3759 "NXCDefs.h"
+0	4302	62	#line 4302 "NXCDefs.h"
+0	4	62	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4	62	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	5	62		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 3
+0	4	65	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4352	65	#line 4352 "NXCDefs.h"
+0	4353	65		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
+0	4352	67	#line 4352 "NXCDefs.h"
+0	4352	67	#line 4352 "NXCDefs.h"
+0	4353	67		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4343	69		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	71	#line 4342 "NXCDefs.h"
+0	4342	71	#line 4342 "NXCDefs.h"
+0	4343	71		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	73	#line 4342 "NXCDefs.h"
+0	4343	73		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	76	#line 4342 "NXCDefs.h"
+0	4343	76		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	79	#line 4342 "NXCDefs.h"
+0	4343	79		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4342	82	#line 4342 "NXCDefs.h"
+0	4342	82	#line 4342 "NXCDefs.h"
+0	4343	82		jmp __001__001__ASM_Label_37
+0	4342	84	#line 4342 "NXCDefs.h"
+0	4343	84		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4342	87	#line 4342 "NXCDefs.h"
+0	4342	87	#line 4342 "NXCDefs.h"
+0	4343	87		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4247	89	#line 4247 "NXCDefs.h"
+0	4248	89		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4247	93	#line 4247 "NXCDefs.h"
+0	4343	93	#line 4343 "NXCDefs.h"
+0	4343	93	#line 4343 "NXCDefs.h"
+0	4344	93		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4343	95	#line 4343 "NXCDefs.h"
+0	4343	95	#line 4343 "NXCDefs.h"
+0	4344	95		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4343	98	#line 4343 "NXCDefs.h"
+0	4260	98	#line 4260 "NXCDefs.h"
+0	4261	98		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	4260	102	#line 4260 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4278	102	#line 4278 "NXCDefs.h"
+0	4279	102	#pragma macro 4
+0	4279	102		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4279	104		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3859	106	#line 3859 "NXCDefs.h"
+0	4278	106	#line 4278 "NXCDefs.h"
+0	4345	106	#line 4345 "NXCDefs.h"
+0	4352	106	#line 4352 "NXCDefs.h"
+0	14	106	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	14	106	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	15	106		set __D0main, 1
+0	16	109	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	109		tst 5, __D0main, __D0main
+0	16	112	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	112		brtst 4, __ASM_Label_498, __D0main
+0	16	115	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	115		set __signed_stack_001main, 0
+0	16	118	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	16	118	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	118		set __signed_stack_002main, 40
+0	16	121	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	16	121	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	121		mov __ArrHelper__main_244_0, __constStr0009
+0	16	123	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	123		getin __D0main, __constVal1, 4
+0	16	127	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	127		numtostr __strretvalmain, __D0main
+0	16	130	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	130		strcat __strbufmain, __strretvalmain
+0	16	134	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	134		mov __ArrHelper__main_244_1, __strbufmain
+0	16	136	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	136		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	16	141	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	141		set __D0main, 1
+0	17	144	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	144	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	144		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	17	146	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	146		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	17	148	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	148		mov __TextOutArgs.Options, __D0main
+0	17	150	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	150		mov __TextOutArgs.Text, __strbufmain
+0	17	152	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	152		syscall 13, __TextOutArgs
+0	17	155	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	155		mov __D0main, __TextOutArgs.Result
+0	17	157	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	157	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	157	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	157	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	157		getin __signed_stack_001main, __constVal1, 4
+0	17	161	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	17	161	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	161		set __D0main, 68
+0	17	164	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	164		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	17	168	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	168		brtst 4, __ASM_Label_510, __D0main
+0	17	171	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	171		getin __signed_stack_001main, __constVal1, 4
+0	17	175	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	18	175	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	19	175		set __D0main, 65
+0	18	178	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	19	178		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	20	182	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	21	182		brtst 4, __ASM_Label_511, __D0main
+0	20	185	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	21	185		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	20	188	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	8551	188	#line 8551 "NXCDefs.h"
+0	8552	188		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	191	#line 8551 "NXCDefs.h"
+0	21	191	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	21	191	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	22	191		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	21	194	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	21	194	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	22	194		set __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, 0
+0	21	197	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4313	197	#line 4313 "NXCDefs.h"
+0	4314	197		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	199	#line 4313 "NXCDefs.h"
+0	4313	199	#line 4313 "NXCDefs.h"
+0	4314	199		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	201	#line 4313 "NXCDefs.h"
+0	4314	201		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	204	#line 4313 "NXCDefs.h"
+0	4314	204		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	207	#line 4313 "NXCDefs.h"
+0	4314	207		set __DU0SetSensorLight_inline_main, 5
+0	4313	210	#line 4313 "NXCDefs.h"
+0	4313	210	#line 4313 "NXCDefs.h"
+0	4314	210		jmp __002__ASM_Label_5
+0	4313	212	#line 4313 "NXCDefs.h"
+0	4314	212		set __DU0SetSensorLight_inline_main, 6
+0	4313	215	#line 4313 "NXCDefs.h"
+0	4313	215	#line 4313 "NXCDefs.h"
+0	4314	215		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	217	#line 4247 "NXCDefs.h"
+0	4248	217		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	221	#line 4247 "NXCDefs.h"
+0	4314	221	#line 4314 "NXCDefs.h"
+0	4314	221	#line 4314 "NXCDefs.h"
+0	4315	221		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	223	#line 4314 "NXCDefs.h"
+0	4314	223	#line 4314 "NXCDefs.h"
+0	4315	223		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	226	#line 4314 "NXCDefs.h"
+0	4260	226	#line 4260 "NXCDefs.h"
+0	4261	226		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	230	#line 4260 "NXCDefs.h"
+0	4315	230	#line 4315 "NXCDefs.h"
+0	4315	230	#line 4315 "NXCDefs.h"
+0	4316	230		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	232	#line 4315 "NXCDefs.h"
+0	4278	232	#line 4278 "NXCDefs.h"
+0	4279	232	#pragma macro 4
+0	4279	232		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	234		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4020	236	#line 4020 "NXCDefs.h"
+0	4278	236	#line 4278 "NXCDefs.h"
+0	4316	236	#line 4316 "NXCDefs.h"
+0	22	236	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	22	236	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	23	236		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	22	239	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	8551	239	#line 8551 "NXCDefs.h"
+0	8552	239		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	242	#line 8551 "NXCDefs.h"
+0	24	242	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	24	242	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	242		getin __signed_stack_001main, __constVal1, 4
+0	24	246	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	24	246	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	246		set __D0main, 24
+0	24	249	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	249		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	24	253	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	253		brtst 4, __ASM_Label_523, __D0main
+0	24	256	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	256		getin __signed_stack_001main, __constVal1, 4
+0	24	260	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	24	260	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	260		set __D0main, 15
+0	24	263	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	25	263		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	26	267	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	267		brtst 4, __ASM_Label_524, __D0main
+0	26	270	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	270		set __signed_stack_001main, 0
+0	26	273	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	26	273	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	273		set __signed_stack_002main, 40
+0	26	276	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	26	276	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	276		mov __ArrHelper__main_244_0, __constStr0009
+0	26	278	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	278		getin __D0main, __constVal1, 4
+0	26	282	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	282		numtostr __strretvalmain, __D0main
+0	26	285	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	285		strcat __strbufmain, __strretvalmain
+0	26	289	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	289		mov __ArrHelper__main_244_1, __strbufmain
+0	26	291	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	291		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	27	296	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	296	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	296		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	27	298	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	298		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	27	300	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	300		set __TextOutArgs.Options, 0
+0	27	303	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	303		mov __TextOutArgs.Text, __strbufmain
+0	27	305	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	305		syscall 13, __TextOutArgs
+0	27	308	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	308		mov __D0main, __TextOutArgs.Result
+0	27	310	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	310	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	310	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	310	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	310		set __signed_stack_001main, 0
+0	27	313	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	313	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	313		set __signed_stack_002main, 40
+0	27	316	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	27	316	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	28	316		strcat __strbufmain, __constStr0010
+0	29	320	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	29	320	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	320		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	29	322	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	322		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	29	324	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	324		set __TextOutArgs.Options, 0
+0	29	327	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	327		mov __TextOutArgs.Text, __strbufmain
+0	29	329	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	329		syscall 13, __TextOutArgs
+0	29	332	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	332		mov __D0main, __TextOutArgs.Result
+0	29	334	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	29	334	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	29	334	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	334		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	29	337	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	29	337	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	337		set __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, 1
+0	29	340	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4313	340	#line 4313 "NXCDefs.h"
+0	4314	340		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	342	#line 4313 "NXCDefs.h"
+0	4313	342	#line 4313 "NXCDefs.h"
+0	4314	342		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	344	#line 4313 "NXCDefs.h"
+0	4314	344		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	347	#line 4313 "NXCDefs.h"
+0	4314	347		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	350	#line 4313 "NXCDefs.h"
+0	4314	350		set __DU0SetSensorLight_inline_main, 5
+0	4313	353	#line 4313 "NXCDefs.h"
+0	4313	353	#line 4313 "NXCDefs.h"
+0	4314	353		jmp __003__ASM_Label_5
+0	4313	355	#line 4313 "NXCDefs.h"
+0	4314	355		set __DU0SetSensorLight_inline_main, 6
+0	4313	358	#line 4313 "NXCDefs.h"
+0	4313	358	#line 4313 "NXCDefs.h"
+0	4314	358		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	360	#line 4247 "NXCDefs.h"
+0	4248	360		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	364	#line 4247 "NXCDefs.h"
+0	4314	364	#line 4314 "NXCDefs.h"
+0	4314	364	#line 4314 "NXCDefs.h"
+0	4315	364		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	366	#line 4314 "NXCDefs.h"
+0	4314	366	#line 4314 "NXCDefs.h"
+0	4315	366		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	369	#line 4314 "NXCDefs.h"
+0	4260	369	#line 4260 "NXCDefs.h"
+0	4261	369		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	373	#line 4260 "NXCDefs.h"
+0	4315	373	#line 4315 "NXCDefs.h"
+0	4315	373	#line 4315 "NXCDefs.h"
+0	4316	373		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	375	#line 4315 "NXCDefs.h"
+0	4278	375	#line 4278 "NXCDefs.h"
+0	4279	375	#pragma macro 4
+0	4279	375		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	377		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4200	379	#line 4200 "NXCDefs.h"
+0	4278	379	#line 4278 "NXCDefs.h"
+0	4316	379	#line 4316 "NXCDefs.h"
+0	30	379	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	30	379	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	31	379		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	30	382	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	8551	382	#line 8551 "NXCDefs.h"
+0	8552	382		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	385	#line 8551 "NXCDefs.h"
+0	31	385	#line 31 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	32	385	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	385		jmp __ASM_Label_541
+0	32	387	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	387		set __signed_stack_001main, 0
+0	32	390	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	32	390	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	390		set __signed_stack_002main, 40
+0	32	393	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	32	393	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	393		mov __ArrHelper__main_244_0, __constStr0009
+0	32	395	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	395		getin __D0main, __constVal1, 4
+0	32	399	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	399		numtostr __strretvalmain, __D0main
+0	32	402	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	402		strcat __strbufmain, __strretvalmain
+0	32	406	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	406		mov __ArrHelper__main_244_1, __strbufmain
+0	32	408	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	408		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	33	413	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	413	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	413		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	33	415	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	415		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	33	417	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	417		set __TextOutArgs.Options, 0
+0	33	420	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	420		mov __TextOutArgs.Text, __strbufmain
+0	33	422	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	422		syscall 13, __TextOutArgs
+0	33	425	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	425		mov __D0main, __TextOutArgs.Result
+0	33	427	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	427	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	427	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	427	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	427		set __signed_stack_001main, 0
+0	33	430	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	430	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	430		set __signed_stack_002main, 40
+0	33	433	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	33	433	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	433		strcat __strbufmain, __constStr0011
+0	34	437	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	437	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	437		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	34	439	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	439		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	34	441	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	441		set __TextOutArgs.Options, 0
+0	34	444	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	444		mov __TextOutArgs.Text, __strbufmain
+0	34	446	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	446		syscall 13, __TextOutArgs
+0	34	449	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	449		mov __D0main, __TextOutArgs.Result
+0	34	451	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	451	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	451	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	451		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	34	454	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	34	454	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	35	454		set __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, 1
+0	34	457	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	4313	457	#line 4313 "NXCDefs.h"
+0	4314	457		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	459	#line 4313 "NXCDefs.h"
+0	4313	459	#line 4313 "NXCDefs.h"
+0	4314	459		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	461	#line 4313 "NXCDefs.h"
+0	4314	461		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	464	#line 4313 "NXCDefs.h"
+0	4314	464		brtst 4, __004__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	467	#line 4313 "NXCDefs.h"
+0	4314	467		set __DU0SetSensorLight_inline_main, 5
+0	4313	470	#line 4313 "NXCDefs.h"
+0	4313	470	#line 4313 "NXCDefs.h"
+0	4314	470		jmp __004__ASM_Label_5
+0	4313	472	#line 4313 "NXCDefs.h"
+0	4314	472		set __DU0SetSensorLight_inline_main, 6
+0	4313	475	#line 4313 "NXCDefs.h"
+0	4313	475	#line 4313 "NXCDefs.h"
+0	4314	475		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	477	#line 4247 "NXCDefs.h"
+0	4248	477		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	481	#line 4247 "NXCDefs.h"
+0	4314	481	#line 4314 "NXCDefs.h"
+0	4314	481	#line 4314 "NXCDefs.h"
+0	4315	481		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	483	#line 4314 "NXCDefs.h"
+0	4314	483	#line 4314 "NXCDefs.h"
+0	4315	483		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	486	#line 4314 "NXCDefs.h"
+0	4260	486	#line 4260 "NXCDefs.h"
+0	4261	486		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	490	#line 4260 "NXCDefs.h"
+0	4315	490	#line 4315 "NXCDefs.h"
+0	4315	490	#line 4315 "NXCDefs.h"
+0	4316	490		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	492	#line 4315 "NXCDefs.h"
+0	4278	492	#line 4278 "NXCDefs.h"
+0	4279	492	#pragma macro 4
+0	4279	492		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	494		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4355	496	#line 4355 "NXCDefs.h"
+0	4278	496	#line 4278 "NXCDefs.h"
+0	4316	496	#line 4316 "NXCDefs.h"
+0	36	496	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	36	496	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	37	496		set __Wait_7qG2_ms_7qG2_000_inline_main, 300
+0	36	499	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	8551	499	#line 8551 "NXCDefs.h"
+0	8552	499		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	502	#line 8551 "NXCDefs.h"
+0	37	502	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	39	502	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	49	502	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	51	502	#line 51 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	52	502		jmp __ASM_Label_497
+0	51	504	#line 51 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+0	52	504		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	52	0	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc"
+2	53	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc
+1	__ResetSensorSubroutine	507	NXTDefs.h
+2	__initialize_global_data	520	C:\Users\FELIPE\Documents\coisas\Robotica\Testes\teste sensor.nxc

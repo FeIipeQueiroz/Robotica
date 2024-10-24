@@ -4,12 +4,68 @@
 *           Lara Esquivel e Paulo Queiroz.
 *
 *********************************************************************/
+#define DEG_TO_RPM 166.6667
+
+long dist, degB;
+float deltaDeg;
 
 /*O comando Fwd roda o robô para trás, já que definimos a sua "frente"
 o lado em que o sensor de luz está*/
 
 // BTcheck e bluetoothstatus
 // Ver direito na documentação
+
+task odometria(){
+ //Declaração de variáveis
+ long prev_degA = 0, prev_degB = 0, prev_degC = 0, prev_tick = 0;
+ long francis_diam = 16.5, raio = 2.8;
+ long degA, degC, deg_dif, dt;
+ float rpm, AngA, AngC, deg;
+
+ //Cálculo da velocidade e velocidade angular
+ while(true){
+  Wait(MS_100);
+  dt = CurrentTick() - prev_tick;
+  degA = MotorRotationCount(OUT_A) - prev_degA;
+  degB = MotorRotationCount(OUT_B) - prev_degB;
+  degC = MotorRotationCount(OUT_C) - prev_degC;
+  dist += (2*3.14*raio*degA*(-1))/360;
+  rpm = (abs(degA) * DEG_TO_RPM) / dt;
+  AngA = ((degA)/(2*francis_diam));
+  AngC = ((degC)/(2*francis_diam));
+  deg = (AngA - AngC)*(180/(3.14*10));
+  deltaDeg += deg;
+  deg_dif = degA - degC;
+
+  DrawTextType dtArgs;
+  dtArgs.Location.X = 0;
+  dtArgs.Location.Y = LCD_LINE1;
+  dtArgs.Options = 0x01;
+  dtArgs.Text = "Dif ang:" + NumToStr(deg_dif);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE2;
+  dtArgs.Options = 0x00;
+  dtArgs.Text = "Dist:" + NumToStr(dist);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE3;
+  dtArgs.Text = "DifAng:" + NumToStr(deg_dif);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE4;
+  dtArgs.Text = "RPM:" + NumToStr(rpm);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE5;
+  dtArgs.Text = "Ang:" + NumToStr(deltaDeg);
+  SysDrawText(dtArgs);
+  dtArgs.Location.Y = LCD_LINE6;
+  dtArgs.Text = "Ang B: " + NumToStr(degB);
+  SysDrawText(dtArgs);
+
+  prev_degA = MotorRotationCount(OUT_A);
+  prev_degC = MotorRotationCount(OUT_C);
+  prev_tick = CurrentTick();
+ }
+}
+
 task main()
 {
  /* Reflexão das cores: !!ALTERA A CADA EXECUÇÃO!!
@@ -20,80 +76,115 @@ task main()
  *  Amarelo: 76
  *  Azul: 46 a 65
  */
+ StartTask(odometria);
  
  //Sensores iniciados seguindo a orientação do livro
- 
  SetSensorTouch(IN_1);
  SetSensorLight(IN_2, true);
  SetSensorUltrasonic(IN_4);
-
- int state = 0;
- int test = 0;
- bool init = false;
  
- ResetTachoCount(OUT_AC);
- MotorTachoCount(OUT_AC);
+ //Declaração de variáveis
+ bool comObjeto = false;
+ int state = 0;
+ long aux1 = 0;
+ float aux2 = 0;
 
- //ResetRotationCount("ports");
- //MotorRotationCount("port")
+ while(SENSOR_1 != 1){}
+ Wait(100);
 
+ OnRevSync(OUT_AC, 50, 0);
+ 
+  while(true)
+  {
 
- //if(SENSOR_2 == 1){
-  //init = true;
- //}
-
-  while(true){
-  OnRev(OUT_AC, 75);
-  
-
-  
-   if(25 > SensorUS(IN_4)){
-    //PlaySound(SOUND_FAST_UP);
-    Off(OUT_AC);
-    Wait(1000);
-    OnRevSync(OUT_AC, 50, -100);
-    Wait(1200);
-    OnRevSync(OUT_AC, 50, 100);
-    Wait(2400);
-    //aq tem q ter um if pra determinar se é parede
-    OnRevSync(OUT_AC, 50, -100);
-    Wait(2400);
-    // se n tiver parede ele roda e pega com a garra :D
-    OnRevSync(OUT_AC, 50, 100);
-    Wait(1200);
-    Off(OUT_AC);
-    OnRev(OUT_B, 40);
-    Wait(320); //Assim ele n força a roda
-    Off(OUT_B);
-    test = 3;
-
-   }
    if(Sensor(IN_2) < 55)
    {
-       test = 1;
+    state = 1;
+    Off(OUT_AC);
+   }
+  
+   if(Sensor(IN_2) > 75)
+   {
+    state = 2;
+    Off(OUT_AC);
    }
    
-   if(test == 1){
-     OnFwd(OUT_AC, 100);
-     Wait(1000);
-     test = 2;
+   if(SensorUS(IN_4) < 10 && Sensor(IN_1) != 1)
+   {
+     state = 4;
    }
    
-   if(test == 2){
-     OnRevSync(OUT_AC, 50, -100);
-     Wait(1200);
-     OnRev(OUT_AC,50);
-     Wait(1000);
-     OnRevSync(OUT_AC, 50, 100);
-     Wait(1200);
-     test = 0;
+   switch (state)
+   {
+   case 0:
+    break;
+   case 1:
+    OnFwdSync(OUT_AC, 50, 0);
+    aux1 = dist - 5;
+    while(dist > aux1){}
+    Off(OUT_AC);
+    Wait(300);
+    OnRevSync(OUT_AC, 50, -100);
+    while(deltaDeg < 85){}
+    Off(OUT_AC);
+    Wait(300);
+    OnRevSync(OUT_AC, 50, 0);
+    aux1 = dist + 5;
+    while(dist < aux1){}
+    Off(OUT_AC);
+    Wait(300);
+    OnRevSync(OUT_AC, 50, 100);
+    while(deltaDeg > 5){}
+    Off(OUT_AC);
+    Wait(300);
+    OnRevSync(OUT_AC, 50, 0);
+    state = 0;
+    break;
+   case 2:
+    aux1 = dist + 15;
+    OnRevSync(OUT_AC, 50,0);
+    while(dist < aux1){}
+    Off(OUT_AC);
+    Wait(100);
+    OnRevSync(OUT_AC, 50, -100);
+    while(deltaDeg < 65){}
+    Off(OUT_AC);
+    Wait(100);
+    state = 3;
+    break;
+   case 3:
+    OnRevSync(OUT_AC, 24, -100);
+    while(SensorUS(IN_4) > 30){}
+    Off(OUT_AC);
+    OnRevSync(OUT_AC, 24, 0);
+    state = 0;
+    break;
+   case 4:
+    Off(OUT_AC);
+    Wait(500);
+    OnRevSync(OUT_AC, 50, -100);
+    while(deltaDeg < 260){}
+    Off(OUT_AC);
+    OnRev(OUT_B, 10);
+    while(abs(degB) < 70){}
+    Off(OUT_B);
+    aux1 = dist - 7;
+    OnFwdSync(OUT_AC, 50, 0);
+    while(dist > aux1){}
+    Off(OUT_AC);
+    OnFwd(OUT_B, 20);
+    while(abs(degB) > 10){}
+    Off(OUT_B);
+    OnRevSync(OUT_AC, 50, 100);
+    while(deltaDeg > 100){}
+    Off(OUT_AC);
+    state = 4;
+    comObjeto = true;
+    break;
    }
-   if(test == 3){
-     OnFwd(OUT_AC, 50);
-     Wait(900);
-     OnFwd(OUT_B, 40);
-     break;
-   }
+   
+   
+  }
  }
 
  /*

@@ -1,0 +1,42 @@
+task main()
+{
+  SetSensorTouch(IN_1);
+  SetSensorLight(IN_2);
+  SetSensorUltrasonic(IN_4);
+
+  while(SENSOR_1 != 1){}
+  Wait(100);
+  bool aux = true;
+  
+  while(true)
+  {
+    OnRevSync(OUT_AC, 50, 0);
+    TextOut(0, LCD_LINE3, "Luz: " + NumToStr(Sensor(IN_2)), true);
+    if(Sensor(IN_2) > 75 && aux){
+      aux = false;
+      Wait(300);
+      OnRevSync(OUT_AC, 75, 100);
+      Wait(300);
+      Off(OUT_AC);
+      aux = true;
+    }
+    if(Sensor(IN_2) < 50 && aux){
+     aux = false;
+     OnFwdSync(OUT_AC, 75, 0);
+     Wait(1000);
+     OnRevSync(OUT_AC, 75, -100);
+     Wait(300);
+     Off(OUT_AC);
+     Wait(300);
+     OnRevSync(OUT_AC, 50, 0);
+     Wait(500);
+     OnRevSync(OUT_AC, 75, 100);
+     Wait(300);
+     Off(OUT_AC);
+     Wait(OUT_AC);
+     aux = true;
+    }
+  }
+}
+
+

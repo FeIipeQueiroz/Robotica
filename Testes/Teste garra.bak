@@ -1,0 +1,64 @@
+task main()
+{
+  bool sla = true;
+  SetSensorTouch(IN_1);
+  SetSensorLight(IN_2);
+  SetSensorUltrasonic(IN_4);
+
+  while(SENSOR_1 != 1){
+  TextOut(0, LCD_LINE3, "ultrassonico: " + NumToStr(SensorUS(IN_4)), true);
+  }
+  Wait(100);
+
+  while(sla){
+
+   OnRevSync(OUT_AC, 50, 0);
+   if(10 > SensorUS(IN_4) && Sensor(IN_1) != 1)
+   {
+      Off(OUT_AC);
+      Wait(100);
+      OnRevSync(OUT_AC, 70, 100);
+      Wait(1300); //1850
+      Off(OUT_AC);
+      OnRev(OUT_B, 30);
+      Wait(250);
+      Off(OUT_B);
+      OnFwdSync(OUT_AC, 70, 0);
+      Wait(1200);
+      OnFwd(OUT_B, 30);
+      Wait(350);
+      Off(OUT_ABC);
+      OnRevSync(OUT_AC, 70, 100);
+      Wait(1150);
+      Off(OUT_AC);
+   }
+   else if(10 > SensorUS(IN_4) && Sensor(IN_1) == 1)
+   {
+     OnFwdSync(OUT_AC, 50, 0);
+     OnRevSync(OUT_AC, 50, 100);
+     Wait(1850);
+     Off(OUT_AC);
+   }
+   if(Sensor(IN_2) > 75)
+   {
+      OnRevSync(OUT_AC, 50, 0);
+      Wait(200);
+      Off(OUT_AC);
+      OnRevSync(OUT_AC, 70, 100);
+      Wait(1150);
+      Off(OUT_AC);
+      OnRev(OUT_B, 30);
+      Wait(250);
+      Off(OUT_B);
+      OnFwdSync(OUT_AC, 50, 0);
+      Wait(300);
+      OnRevSync(OUT_AC, 100, 0);
+      Wait(300);
+      OnFwd(OUT_B, 30);
+      Wait(250);
+      Off(OUT_ABC);
+   }
+}
+}
+
+

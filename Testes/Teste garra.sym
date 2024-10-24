@@ -1,0 +1,757 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_002main	6	1	0	4	2
+1	__signed_stack_001main	6	1	4	4	34
+2	__RLSBmutex1	9	0	8	4	2
+3	__CLSRMutex3	9	0	12	4	2
+4	__CLSRMutex1	9	0	16	4	2
+5	__CLSCSMutex3	9	0	20	4	2
+6	__CLSWMutex3	9	0	24	4	2
+7	__DU0main	5	1	28	4	2
+8	__D0main	6	1	32	4	59
+9	__RLSBmutex3	9	0	36	4	4
+10	__D0SetSensorLight_inline_main	6	1	40	4	2
+11	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	44	4	5
+12	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	48	4	2
+13	__DU0SetSensorLight_inline_main	5	1	52	4	5
+14	__CLSCSMutex1	9	0	56	4	2
+15	__CLSWMutex1	9	0	60	4	2
+16	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	64	4	28
+17	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	68	1	2
+18	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	69	1	2
+19	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	70	1	2
+20	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	71	1	2
+21	__constVal96	2	0	72	1	24
+22	__PFTmp	1	1	73	1	1
+23	__RLSBIterations3	1	1	74	1	4
+24	__constVal15	2	0	75	1	6
+25	__constVal7	2	0	76	1	10
+26	__constVal63	2	0	77	1	24
+27	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	78	1	2
+28	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	79	1	2
+29	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	80	1	4
+30	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	81	1	2
+31	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	82	1	2
+32	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	83	1	2
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	84	1	2
+34	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	85	1	2
+35	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	86	1	4
+36	____initialize_global_data_return	1	1	87	1	3
+37	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	88	1	4
+38	__main_7qG2_sla_7qG2_000	1	1	89	1	2
+39	__LSWriteOptions1	1	1	90	1	1
+40	____ResetSensorSubroutine_return	1	1	91	1	5
+41	__ResetSensorTmp	1	1	92	1	2
+42	__RLSBResult1	2	1	93	1	7
+43	____ReadLSBytes1_return	1	1	94	1	3
+44	__LSWriteOptions3	1	1	95	1	1
+45	__constVal1	2	0	96	1	16
+46	__constVal32	2	0	97	1	73
+47	__OnRev_Tmp	2	1	98	1	18
+48	__ResetSensorPort	1	1	99	1	5
+49	__constVal3	2	0	100	1	15
+50	__constVal0	2	1	101	1	67
+51	__RLSBytesCount1	1	1	102	1	7
+52	____ReadLSBytes3_return	1	1	103	1	4
+53	__constVal2	2	0	104	1	10
+54	__RLSBResult3	2	1	105	1	7
+55	__RLSBIterations1	1	1	106	1	4
+56	__RLSBytesCount3	1	1	107	1	8
+57	__CLSRArgs1	8	0	4	12	5
+58	__CLSRArgs1.Result	2	1	108	1	5
+59	__CLSRArgs1.Port	1	1	109	1	5
+60	__CLSRArgs1.Buffer	7	0	110	4	5
+61	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+62	__CLSRArgs1.BufferLen	1	1	112	1	5
+63	__CLSCSArgs3	8	0	3	4	4
+64	__CLSCSArgs3.Result	2	1	116	1	4
+65	__CLSCSArgs3.Port	1	1	117	1	4
+66	__CLSCSArgs3.BytesReady	1	1	118	1	4
+67	__CLSCSArgs1	8	0	3	4	4
+68	__CLSCSArgs1.Result	2	1	120	1	4
+69	__CLSCSArgs1.Port	1	1	121	1	4
+70	__CLSCSArgs1.BytesReady	1	1	122	1	4
+71	__CLSWArgs1	8	0	4	12	5
+72	__CLSWArgs1.Result	2	1	124	1	5
+73	__CLSWArgs1.Port	1	1	125	1	5
+74	__CLSWArgs1.Buffer	7	0	126	4	5
+75	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+76	__CLSWArgs1.ReturnLen	1	1	128	1	5
+77	__TextOutArgs	8	0	4	16	6
+78	__TextOutArgs.Result	2	1	132	1	6
+79	__TextOutArgs.Location	8	0	2	4	6
+80	__TextOutArgs.Location.X	4	1	136	2	6
+81	__TextOutArgs.Location.Y	4	1	138	2	6
+82	__TextOutArgs.Text	7	0	140	4	6
+83	__TextOutArgs.Text.Text_type	1	0	0	1	0
+84	__TextOutArgs.Options	5	1	144	4	6
+85	__CLSRArgs3	8	0	4	12	5
+86	__CLSRArgs3.Result	2	1	148	1	5
+87	__CLSRArgs3.Port	1	1	149	1	5
+88	__CLSRArgs3.Buffer	7	0	150	4	5
+89	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+90	__CLSRArgs3.BufferLen	1	1	152	1	5
+91	__CLSWArgs3	8	0	4	12	5
+92	__CLSWArgs3.Result	2	1	156	1	5
+93	__CLSWArgs3.Port	1	1	157	1	5
+94	__CLSWArgs3.Buffer	7	0	158	4	5
+95	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+96	__CLSWArgs3.ReturnLen	1	1	160	1	5
+97	__constStr0009	7	0	162	4	1
+98	__constStr0009.__constStr0009_type	1	1	0	1	0
+99	__strretvalmain	7	0	164	4	2
+100	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+101	__RLSReadBuf3	7	0	166	4	10
+102	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+103	__OUT_AC	7	0	168	4	16
+104	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+105	__OUT_ABC	7	0	170	4	2
+106	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+107	__RLSLastGoodRead1	7	0	172	4	2
+108	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+109	__ArrHelper__main_244_1	7	0	174	4	2
+110	__ArrHelper__main_244_1.__ArrHelper__main_244_1_type	1	0	0	1	0
+111	__strbufmain	7	0	176	4	4
+112	__strbufmain.__strbufmain_type	1	0	0	1	0
+113	__RLSReadBuf1	7	0	178	4	8
+114	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+115	__RLSLastGoodRead3	7	0	180	4	2
+116	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+117	__RLSBbufLSWrite1	7	0	182	4	3
+118	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+119	__ArrHelper__main_244_0	7	0	184	4	2
+120	__ArrHelper__main_244_0.__ArrHelper__main_244_0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	3	2	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	4	2		set __main_7qG2_sla_7qG2_000, 1
+0	3	5	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	3	5	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	4	5		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3	8	#line 3 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	4302	8	#line 4302 "NXCDefs.h"
+0	4303	8	#pragma macro 6
+0	4303	8		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	12		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	16		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	18		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3674	20	#line 3674 "NXCDefs.h"
+0	4302	20	#line 4302 "NXCDefs.h"
+0	4	20	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	4	20	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	5	20		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	4	23	#line 4 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	5	23	#line 5 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	6	23		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	27	#line 4313 "NXCDefs.h"
+0	4313	27	#line 4313 "NXCDefs.h"
+0	4314	27		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	29	#line 4313 "NXCDefs.h"
+0	4314	29		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	32	#line 4313 "NXCDefs.h"
+0	4314	32		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4314	35		set __DU0SetSensorLight_inline_main, 5
+0	4313	38	#line 4313 "NXCDefs.h"
+0	4313	38	#line 4313 "NXCDefs.h"
+0	4314	38		jmp __001__ASM_Label_5
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4314	40		set __DU0SetSensorLight_inline_main, 6
+0	4313	43	#line 4313 "NXCDefs.h"
+0	4313	43	#line 4313 "NXCDefs.h"
+0	4314	43		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	45	#line 4247 "NXCDefs.h"
+0	4248	45		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	49	#line 4247 "NXCDefs.h"
+0	4314	49	#line 4314 "NXCDefs.h"
+0	4314	49	#line 4314 "NXCDefs.h"
+0	4315	49		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4315	51		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	54	#line 4314 "NXCDefs.h"
+0	4260	54	#line 4260 "NXCDefs.h"
+0	4261	54		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	58	#line 4260 "NXCDefs.h"
+0	4315	58	#line 4315 "NXCDefs.h"
+0	4315	58	#line 4315 "NXCDefs.h"
+0	4315	58	#line 4315 "NXCDefs.h"
+0	4278	58	#line 4278 "NXCDefs.h"
+0	4279	58	#pragma macro 4
+0	4279	58		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	60		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3764	62	#line 3764 "NXCDefs.h"
+0	4278	62	#line 4278 "NXCDefs.h"
+0	4316	62	#line 4316 "NXCDefs.h"
+0	5	62	#line 5 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	5	62	#line 5 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	6	62		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 1
+0	5	65	#line 5 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	4352	65	#line 4352 "NXCDefs.h"
+0	4353	65		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
+0	4352	67	#line 4352 "NXCDefs.h"
+0	4352	67	#line 4352 "NXCDefs.h"
+0	4353	67		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4343	69		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	71	#line 4342 "NXCDefs.h"
+0	4342	71	#line 4342 "NXCDefs.h"
+0	4343	71		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	73	#line 4342 "NXCDefs.h"
+0	4343	73		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	76	#line 4342 "NXCDefs.h"
+0	4343	76		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	79	#line 4342 "NXCDefs.h"
+0	4343	79		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4342	82	#line 4342 "NXCDefs.h"
+0	4342	82	#line 4342 "NXCDefs.h"
+0	4343	82		jmp __001__001__ASM_Label_37
+0	4342	84	#line 4342 "NXCDefs.h"
+0	4343	84		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4342	87	#line 4342 "NXCDefs.h"
+0	4342	87	#line 4342 "NXCDefs.h"
+0	4343	87		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4247	89	#line 4247 "NXCDefs.h"
+0	4248	89		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4247	93	#line 4247 "NXCDefs.h"
+0	4343	93	#line 4343 "NXCDefs.h"
+0	4343	93	#line 4343 "NXCDefs.h"
+0	4344	93		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4343	95	#line 4343 "NXCDefs.h"
+0	4343	95	#line 4343 "NXCDefs.h"
+0	4344	95		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4343	98	#line 4343 "NXCDefs.h"
+0	4260	98	#line 4260 "NXCDefs.h"
+0	4261	98		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	4260	102	#line 4260 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4344	102	#line 4344 "NXCDefs.h"
+0	4278	102	#line 4278 "NXCDefs.h"
+0	4279	102	#pragma macro 4
+0	4279	102		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4279	104		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3865	106	#line 3865 "NXCDefs.h"
+0	4278	106	#line 4278 "NXCDefs.h"
+0	4345	106	#line 4345 "NXCDefs.h"
+0	4352	106	#line 4352 "NXCDefs.h"
+0	7	106	#line 7 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	7	106	#line 7 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	106		getin __signed_stack_001main, __constVal0, 4
+0	7	110	#line 7 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	7	110	#line 7 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	110		set __D0main, 1
+0	7	113	#line 7 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	113		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	8	117	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	117		brtst 4, __ASM_Label_498, __D0main
+0	8	120	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	120		set __signed_stack_001main, 0
+0	8	123	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	123	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	123		set __signed_stack_002main, 40
+0	8	126	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	126	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	126		mov __ArrHelper__main_244_0, __constStr0009
+0	8	128	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	128	#pragma macro 26
+0	9	128		acquire __RLSBmutex1
+0	9	129		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	9	131		set __RLSBytesCount1, 1
+0	9	134		wait2 NA, __constVal15
+0	9	137		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	9	139		index __D0main, __RLSReadBuf1, 65535
+0	9	143		release __RLSBmutex1
+0	3899	144	#line 3899 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8	144	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	144		numtostr __strretvalmain, __D0main
+0	8	147	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	147		strcat __strbufmain, __strretvalmain
+0	8	151	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	151		mov __ArrHelper__main_244_1, __strbufmain
+0	8	153	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	153		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	8	158	#line 8 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	158		set __D0main, 1
+0	9	161	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	161	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	161		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	9	163	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	163		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	9	165	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	165		mov __TextOutArgs.Options, __D0main
+0	9	167	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	167		mov __TextOutArgs.Text, __strbufmain
+0	9	169	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	169		syscall 13, __TextOutArgs
+0	9	172	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	172		mov __D0main, __TextOutArgs.Result
+0	9	174	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	174	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	9	174	#line 9 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	174	#line 10 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	11	174		jmp __ASM_Label_497
+0	10	176	#line 10 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	10	176	#line 10 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	11	176		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	10	179	#line 10 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	179	#line 8551 "NXCDefs.h"
+0	8552	179		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	182	#line 8551 "NXCDefs.h"
+0	12	182	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	12	182	#line 12 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	13	182		mov __DU0main, __main_7qG2_sla_7qG2_000
+0	14	184	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	184		tst 5, __D0main, __DU0main
+0	14	187	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	187		brtst 4, __ASM_Label_512, __D0main
+0	14	190	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	190		set __signed_stack_001main, 50
+0	14	193	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	14	193	#line 14 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	193		set __D0main, 0
+0	15	196	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	196	#pragma macro 10
+0	16	196		neg __OnRev_Tmp, __signed_stack_001main
+0	16	199		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3968	222	#line 3968 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	222	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	222	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	222		set __signed_stack_001main, 10
+0	15	225	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	225	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	225	#pragma macro 26
+0	16	225		acquire __RLSBmutex3
+0	16	226		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	16	228		set __RLSBytesCount3, 1
+0	16	231		wait2 NA, __constVal15
+0	16	234		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	16	236		index __D0main, __RLSReadBuf3, 65535
+0	16	240		release __RLSBmutex3
+0	3977	241	#line 3977 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	15	241	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	241		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	15	245	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	245		brtst 4, __ASM_Label_520, __D0main
+0	15	248	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	248		getin __signed_stack_001main, __constVal0, 4
+0	15	252	#line 15 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	16	252	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	17	252		set __D0main, 1
+0	16	255	#line 16 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	17	255		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	17	259	#line 17 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	18	259		brtst 4, __ASM_Label_521, __D0main
+0	18	262	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	19	262	#pragma macro 7
+0	19	262		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3998	285	#line 3998 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	18	285	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	18	285	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	19	285		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	18	288	#line 18 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	288	#line 8551 "NXCDefs.h"
+0	8552	288		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	291	#line 8551 "NXCDefs.h"
+0	19	291	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	19	291	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	20	291		set __signed_stack_001main, 70
+0	19	294	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	19	294	#line 19 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	20	294		set __D0main, 100
+0	20	297	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	21	297	#pragma macro 10
+0	21	297		neg __OnRev_Tmp, __signed_stack_001main
+0	21	300		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4016	323	#line 4016 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	20	323	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	20	323	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	21	323		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	20	326	#line 20 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	326	#line 8551 "NXCDefs.h"
+0	8552	326		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	329	#line 8551 "NXCDefs.h"
+0	21	329	#line 21 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	22	329	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	23	329	#pragma macro 7
+0	23	329		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4028	352	#line 4028 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	22	352	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	22	352	#line 22 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	23	352		set __D0main, 30
+0	23	355	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	24	355	#pragma macro 10
+0	24	355		neg __OnRev_Tmp, __D0main
+0	24	358		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4033	381	#line 4033 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	23	381	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	23	381	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	24	381		set __Wait_7qG2_ms_7qG2_000_inline_main, 250
+0	23	384	#line 23 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	384	#line 8551 "NXCDefs.h"
+0	8552	384		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	387	#line 8551 "NXCDefs.h"
+0	24	387	#line 24 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	25	387	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	26	387	#pragma macro 7
+0	26	387		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4044	410	#line 4044 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	25	410	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	25	410	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	26	410		set __signed_stack_001main, 70
+0	25	413	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	25	413	#line 25 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	26	413		set __D0main, 0
+0	26	416	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	27	416	#pragma macro 7
+0	27	416		setout __OUT_AC, 2, __signed_stack_001main, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4054	439	#line 4054 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	26	439	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	26	439	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	27	439		set __Wait_7qG2_ms_7qG2_000_inline_main, 1200
+0	26	442	#line 26 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	442	#line 8551 "NXCDefs.h"
+0	8552	442		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	445	#line 8551 "NXCDefs.h"
+0	27	445	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	27	445	#line 27 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	28	445		set __D0main, 30
+0	28	448	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	29	448	#pragma macro 7
+0	29	448		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4068	471	#line 4068 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	28	471	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	28	471	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	29	471		set __Wait_7qG2_ms_7qG2_000_inline_main, 350
+0	28	474	#line 28 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	474	#line 8551 "NXCDefs.h"
+0	8552	474		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	477	#line 8551 "NXCDefs.h"
+0	29	477	#line 29 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	30	477	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	31	477	#pragma macro 7
+0	31	477		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4079	500	#line 4079 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	30	500	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	30	500	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	31	500		set __signed_stack_001main, 70
+0	30	503	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	30	503	#line 30 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	31	503		set __D0main, 100
+0	31	506	#line 31 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	32	506	#pragma macro 10
+0	32	506		neg __OnRev_Tmp, __signed_stack_001main
+0	32	509		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4089	532	#line 4089 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	31	532	#line 31 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	31	532	#line 31 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	32	532		set __Wait_7qG2_ms_7qG2_000_inline_main, 1150
+0	31	535	#line 31 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	535	#line 8551 "NXCDefs.h"
+0	8552	535		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	538	#line 8551 "NXCDefs.h"
+0	32	538	#line 32 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	33	538	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	34	538	#pragma macro 7
+0	34	538		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4101	561	#line 4101 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	33	561	#line 33 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	34	561	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	561		jmp __ASM_Label_550
+0	34	563	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	563		set __signed_stack_001main, 10
+0	34	566	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	34	566	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	566	#pragma macro 26
+0	35	566		acquire __RLSBmutex3
+0	35	567		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	35	569		set __RLSBytesCount3, 1
+0	35	572		wait2 NA, __constVal15
+0	35	575		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	35	577		index __D0main, __RLSReadBuf3, 65535
+0	35	581		release __RLSBmutex3
+0	4112	582	#line 4112 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	34	582	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	582		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	34	586	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	586		brtst 4, __ASM_Label_552, __D0main
+0	34	589	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	589		getin __signed_stack_001main, __constVal0, 4
+0	34	593	#line 34 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	35	593	#line 35 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	36	593		set __D0main, 1
+0	35	596	#line 35 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	36	596		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	36	600	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	600		brtst 4, __ASM_Label_553, __D0main
+0	36	603	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	603		set __signed_stack_001main, 50
+0	36	606	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	36	606	#line 36 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	606		set __D0main, 0
+0	37	609	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	38	609	#pragma macro 7
+0	38	609		setout __OUT_AC, 2, __signed_stack_001main, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4140	632	#line 4140 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	632	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	632	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	38	632		set __signed_stack_001main, 50
+0	37	635	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	37	635	#line 37 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	38	635		set __D0main, 100
+0	38	638	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	39	638	#pragma macro 10
+0	39	638		neg __OnRev_Tmp, __signed_stack_001main
+0	39	641		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4151	664	#line 4151 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	38	664	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	38	664	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	39	664		set __Wait_7qG2_ms_7qG2_000_inline_main, 1850
+0	38	667	#line 38 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	667	#line 8551 "NXCDefs.h"
+0	8552	667		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	670	#line 8551 "NXCDefs.h"
+0	39	670	#line 39 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	40	670	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	41	670	#pragma macro 7
+0	41	670		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4163	693	#line 4163 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	40	693	#line 40 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	41	693	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	41	693	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	41	693	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	42	693		getin __signed_stack_001main, __constVal1, 4
+0	41	697	#line 41 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	42	697	#line 42 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	43	697		set __D0main, 75
+0	42	700	#line 42 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	43	700		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	43	704	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	44	704		brtst 4, __ASM_Label_566, __D0main
+0	43	707	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	44	707		set __signed_stack_001main, 50
+0	43	710	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	43	710	#line 43 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	44	710		set __D0main, 0
+0	44	713	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	45	713	#pragma macro 10
+0	45	713		neg __OnRev_Tmp, __signed_stack_001main
+0	45	716		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4191	739	#line 4191 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	44	739	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	44	739	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	45	739		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	44	742	#line 44 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	742	#line 8551 "NXCDefs.h"
+0	8552	742		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	745	#line 8551 "NXCDefs.h"
+0	45	745	#line 45 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	46	745	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	47	745	#pragma macro 7
+0	47	745		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4203	768	#line 4203 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	46	768	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	46	768	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	47	768		set __signed_stack_001main, 70
+0	46	771	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	46	771	#line 46 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	47	771		set __D0main, 100
+0	47	774	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	48	774	#pragma macro 10
+0	48	774		neg __OnRev_Tmp, __signed_stack_001main
+0	48	777		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4213	800	#line 4213 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	47	800	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	47	800	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	48	800		set __Wait_7qG2_ms_7qG2_000_inline_main, 1150
+0	47	803	#line 47 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	803	#line 8551 "NXCDefs.h"
+0	8552	803		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	806	#line 8551 "NXCDefs.h"
+0	48	806	#line 48 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	49	806	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	50	806	#pragma macro 7
+0	50	806		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4225	829	#line 4225 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	49	829	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	49	829	#line 49 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	50	829		set __D0main, 30
+0	50	832	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	51	832	#pragma macro 10
+0	51	832		neg __OnRev_Tmp, __D0main
+0	51	835		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4230	858	#line 4230 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	50	858	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	50	858	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	51	858		set __Wait_7qG2_ms_7qG2_000_inline_main, 250
+0	50	861	#line 50 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	861	#line 8551 "NXCDefs.h"
+0	8552	861		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	864	#line 8551 "NXCDefs.h"
+0	51	864	#line 51 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	52	864	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	53	864	#pragma macro 7
+0	53	864		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4241	887	#line 4241 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	52	887	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	52	887	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	53	887		set __signed_stack_001main, 50
+0	52	890	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	52	890	#line 52 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	53	890		set __D0main, 0
+0	53	893	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	54	893	#pragma macro 7
+0	54	893		setout __OUT_AC, 2, __signed_stack_001main, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4251	916	#line 4251 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	53	916	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	53	916	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	54	916		set __Wait_7qG2_ms_7qG2_000_inline_main, 300
+0	53	919	#line 53 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	919	#line 8551 "NXCDefs.h"
+0	8552	919		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	922	#line 8551 "NXCDefs.h"
+0	54	922	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	54	922	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	55	922		set __signed_stack_001main, 100
+0	54	925	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	54	925	#line 54 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	55	925		set __D0main, 0
+0	55	928	#line 55 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	56	928	#pragma macro 10
+0	56	928		neg __OnRev_Tmp, __signed_stack_001main
+0	56	931		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4270	954	#line 4270 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	55	954	#line 55 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	55	954	#line 55 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	56	954		set __Wait_7qG2_ms_7qG2_000_inline_main, 300
+0	55	957	#line 55 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	957	#line 8551 "NXCDefs.h"
+0	8552	957		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	960	#line 8551 "NXCDefs.h"
+0	56	960	#line 56 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	56	960	#line 56 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	57	960		set __D0main, 30
+0	57	963	#line 57 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	58	963	#pragma macro 7
+0	58	963		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4284	986	#line 4284 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	57	986	#line 57 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	57	986	#line 57 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	58	986		set __Wait_7qG2_ms_7qG2_000_inline_main, 250
+0	57	989	#line 57 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	8551	989	#line 8551 "NXCDefs.h"
+0	8552	989		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	992	#line 8551 "NXCDefs.h"
+0	58	992	#line 58 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	59	992	#line 59 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	60	992	#pragma macro 7
+0	60	992		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4295	1015	#line 4295 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	59	1015	#line 59 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	61	1015	#line 61 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	64	1015	#line 64 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	65	1015		jmp __ASM_Label_511
+0	64	1017	#line 64 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+0	65	1017		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6319	0	#pragma macro 25
+2	6319	0		acquire __CLSWMutex1
+2	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+2	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	6319	9		syscall 21, __CLSWArgs1
+2	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+2	6319	14		release __CLSWMutex1
+2	6319	15	#line 6319 "NXTDefs.h"
+2	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+2	6321	18		set __RLSBIterations1, 60
+2	6323	21	#pragma macro 23
+2	6323	21		acquire __CLSCSMutex1
+2	6323	22		set __CLSCSArgs1.Port, 1
+2	6323	25		syscall 23, __CLSCSArgs1
+2	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+2	6323	32		release __CLSCSMutex1
+2	6323	33	#line 6323 "NXTDefs.h"
+2	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+2	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+2	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	6329	46		wait2 NA, __constVal1
+2	6330	49		jmp __RLSBDoCheckStatus1
+2	6332	51		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	6333	54		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	6335	58	#pragma macro 25
+2	6335	58		acquire __CLSRMutex1
+2	6335	59		set __CLSRArgs1.Port, 1
+2	6335	62		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	6335	64		syscall 22, __CLSRArgs1
+2	6335	67		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	6335	69		mov __RLSBResult1, __CLSRArgs1.Result
+2	6335	71		release __CLSRMutex1
+2	6335	72	#line 6335 "NXTDefs.h"
+2	6336	72		brtst 5, __RLSBError1, __RLSBResult1
+2	6337	75		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	6338	77		jmp __RLSBDone1
+2	6340	79		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	6342	81		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	6344	84		subret ____ReadLSBytes1_return
+3	6393	0	#pragma macro 25
+3	6393	0		acquire __CLSWMutex3
+3	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+3	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	6393	9		syscall 21, __CLSWArgs3
+3	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+3	6393	14		release __CLSWMutex3
+3	6393	15	#line 6393 "NXTDefs.h"
+3	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+3	6395	18		set __RLSBIterations3, 60
+3	6397	21	#pragma macro 23
+3	6397	21		acquire __CLSCSMutex3
+3	6397	22		set __CLSCSArgs3.Port, 3
+3	6397	25		syscall 23, __CLSCSArgs3
+3	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+3	6397	32		release __CLSCSMutex3
+3	6397	33	#line 6397 "NXTDefs.h"
+3	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+3	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+3	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	6403	46		wait2 NA, __constVal1
+3	6404	49		jmp __RLSBDoCheckStatus3
+3	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	6409	58	#pragma macro 25
+3	6409	58		acquire __CLSRMutex3
+3	6409	59		set __CLSRArgs3.Port, 3
+3	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	6409	64		syscall 22, __CLSRArgs3
+3	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+3	6409	71		release __CLSRMutex3
+3	6409	72	#line 6409 "NXTDefs.h"
+3	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+3	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	6412	77		jmp __RLSBDone3
+3	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	6418	84		subret ____ReadLSBytes3_return
+4	65	0	#line 65 "C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc"
+4	66	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc
+1	__ResetSensorSubroutine	1020	NXTDefs.h
+2	__ReadLSBytes1	1033	NXTDefs.h
+3	__ReadLSBytes3	1119	NXTDefs.h
+4	__initialize_global_data	1205	C:\Users\FELIPE\Documents\coisas\Robotica\Testes\Teste garra.nxc
