@@ -1,109 +1,510 @@
-/*********************************************************************
-*                           PBL 1 - Robótica.
-* Desenvolvido por: Alisson Rodruigues, Felipe Queiroz,
-*           Lara Esquivel e Paulo Queiroz.
-*
-*********************************************************************/
+#define DEG_TO_RPM 166.6667
+#define BT_CONN 0
+#define INBOX 1
+#define OUTBOX 5
+#define PRETO 40
+#define PRATA 80
 
-/*O comando Fwd roda o robô para trás, já que definimos a sua "frente"
-o lado em que o sensor de luz está*/
+long dist = 0, degB = 0;
+float deltaDeg = 0;
+int pratas = 0;
+bool canCount = true;
+int state;
+string str = "";
 
-// BTcheck e bluetoothstatus
-// Ver direito na documentação
+// Função para checar status do Bluetooth
+sub BTCheck(int conn){
+    if(!BluetoothStatus(conn) == NO_ERR){
+        TextOut(5, LCD_LINE2, "ERROR");
+        Wait(500);
+    }
+}
+
+// Função para enviar mensagens via Bluetooth
+sub SendBluetoothMessage(string message) {
+    SendRemoteString(BT_CONN, OUTBOX, message);
+}
+
+int Calibrate(){
+ int sensorVal, biggest, i = 0;
+ sensorVal = Sensor(IN_2);
+ while(i < 100)
+ i = i + 1;
+ if(biggest < sensorVal){
+  biggest = sensorVal;
+ }
+ return biggest;
+}
+
+
+// Tarefa de odometria
+task odometria(){
+    // Declaração de variáveis
+    long prev_degA = 0, prev_degB = 0, prev_degC = 0, prev_tick = 0;
+    long francis_diam = 16.5, raio = 2.8;
+    long degA, degC, deg_dif, dt;
+    float rpm, AngA, AngC, deg, distm;
+    long send_timer = CurrentTick();  // Inicializar o temporizador
+
+    // Cálculo da velocidade e velocidade angular
+    while(true){
+    
+    /*Wait(MS_100);
+      dt = CurrentTick() - prev_tick;
+      degA = MotorRotationCount(OUT_A) - prev_degA;
+      degC = MotorRotationCount(OUT_C) - prev_degC;
+      distm = (2*3.14*raio*abs(degA) + 2*3.14*raio*abs(degC))/2;
+      dist += distm/360*2;
+      rpm = (abs(degA) * DEG_TO_RPM) / dt;
+      AngA = ((degA)/(2*francis_diam));
+      AngC = ((degC)/(2*francis_diam));
+      deg = (AngA - AngC)*(180/(3.14*10));
+      deltaDeg += deg;
+      deg_dif = degA - degC;
+
+      if(dist > 30){
+        Off(OUT_AC);
+        //Wait(300);
+      } */
+
+        Wait(MS_100);
+        dt = CurrentTick() - prev_tick;
+        degA = MotorRotationCount(OUT_A) - prev_degA;
+        degB = MotorRotationCount(OUT_B) - prev_degB;
+        degC = MotorRotationCount(OUT_C) - prev_degC;
+        dist += (2*3.14*raio*degA*(-1))/180;
+        rpm = (abs(degA) * DEG_TO_RPM) / dt;
+        AngA = ((degA)/(2*francis_diam));
+        AngC = ((degC)/(2*francis_diam));
+        deg = (AngA - AngC)*(180/(3.14*10));
+        deltaDeg += deg;
+        deg_dif = degA - degC;
+
+        // Verificar se passou 1 segundo (1000 ms) desde o último envio
+        if(CurrentTick() - send_timer >= 1000) {
+            // Formatar mensagem para envio via Bluetooth
+            string distStr = NumToStr(dist);
+            string angStr = NumToStr(deltaDeg);
+            string message = StrCat(distStr, ";", angStr);
+            SendBluetoothMessage(message);
+
+            // Atualizar o temporizador
+            send_timer = CurrentTick();
+        }
+
+        // Atualizar valores de exibição na tela (LCD)
+        DrawTextType dtArgs;
+        dtArgs.Location.X = 0;
+        dtArgs.Location.Y = LCD_LINE1;
+        dtArgs.Options = 0x01;
+        dtArgs.Text = "Dif ang:" + NumToStr(deg_dif);
+        SysDrawText(dtArgs);
+        dtArgs.Location.Y = LCD_LINE2;
+        dtArgs.Options = 0x00;
+        dtArgs.Text = "Dist:" + NumToStr(dist);
+        SysDrawText(dtArgs);
+        dtArgs.Location.Y = LCD_LINE3;
+        dtArgs.Text = "DifAng:" + NumToStr(deg_dif);
+        SysDrawText(dtArgs);
+        dtArgs.Location.Y = LCD_LINE4;
+        dtArgs.Text = "RPM:" + NumToStr(rpm);
+        SysDrawText(dtArgs);
+        dtArgs.Location.Y = LCD_LINE5;
+        dtArgs.Text = "Ang:" + NumToStr(deltaDeg);
+        SysDrawText(dtArgs);
+        dtArgs.Location.Y = LCD_LINE6;
+        dtArgs.Text = "Cont Pratas: " + NumToStr(pratas);
+        SysDrawText(dtArgs);
+        
+        TextOut(0, LCD_LINE7, "State: " + NumToStr(state));
+
+        // Atualizar valores das variáveis anteriores
+        prev_degA = MotorRotationCount(OUT_A);
+        prev_degC = MotorRotationCount(OUT_C);
+        prev_tick = CurrentTick();
+    }
+}
+
 task main()
 {
- /* Reflexão das cores: !!ALTERA A CADA EXECUÇÃO!!
- *  Branco: 75 e 76
- *  Preto: >50
- *  Prata: 86, 87
- *  Vermelho: 75
- *  Amarelo: 76
- *  Azul: 46 a 65
- */
- 
- //Sensores iniciados seguindo a orientação do livro
- 
- SetSensorTouch(IN_1);
- SetSensorLight(IN_2, true);
- SetSensorUltrasonic(IN_4);
+    // Sensores iniciados seguindo a orientação do livro
+    SetSensorTouch(IN_1);
+    SetSensorLight(IN_2, false);
+    SetSensorUltrasonic(IN_4);
 
- int state = 0;
- int test = 0;
- bool init = false;
- 
- ResetTachoCount(OUT_AC);
- MotorTachoCount(OUT_AC);
+    // Declaração de variáveis
+    string init;
+    bool comObjeto = false, lightState = true;
+    long aux1, distObj = 0;
+    float aux2 = 0;
+    int redOff = 18, whiteOff = 23;
+    state = 0;
 
- //ResetRotationCount("ports");
- //MotorRotationCount("port")
+                /*  if(biggest >= 20 && biggest < 22){
+               TextOut(0, LCD_LINE3, "Vermelho :(");
+              } else if(biggest >= 23){  */
 
-
- //if(SENSOR_2 == 1){
-  //init = true;
- //}
-
-  while(true){
-  OnRev(OUT_AC, 75);
-  
-
-  
-   if(25 > SensorUS(IN_4)){
-    //PlaySound(SOUND_FAST_UP);
-    Off(OUT_AC);
+    /*while(redOff == 0){
+      if(Sensor(IN_1) == 1){
+       redOff = Calibrate();
+      }
+      TextOut(0, LCD_LINE1, "red: " + NumToStr(redOff));
+    }
+    
     Wait(1000);
-    OnRevSync(OUT_AC, 50, -100);
-    Wait(1200);
-    OnRevSync(OUT_AC, 50, 100);
-    Wait(2400);
-    //aq tem q ter um if pra determinar se é parede
-    OnRevSync(OUT_AC, 50, -100);
-    Wait(2400);
-    // se n tiver parede ele roda e pega com a garra :D
-    OnRevSync(OUT_AC, 50, 100);
-    Wait(1200);
-    Off(OUT_AC);
-    OnRev(OUT_B, 40);
-    Wait(320); //Assim ele n força a roda
-    Off(OUT_B);
-    test = 3;
+    
+    while(whiteOff == 0){
+      if(Sensor(IN_1) == 1){
+       whiteOff = Calibrate();
+      }
+      TextOut(0, LCD_LINE1, "white: " + NumToStr(whiteOff));
+    }
+    
+    Wait(1000);*/
+    StartTask(odometria);
+    SetSensorLight(IN_2, true);
+    /**
+    while(ReceiveMessage(1, true, str) != '0'){
+     // Checar Bluetooth
+     //7BTCheck(BT_CONN);
+    }**/
+    while(SENSOR_1 != 1)
+    {
+     // Checar Bluetooth
+     BTCheck(BT_CONN);
+    }
+    Wait(200);
 
-   }
-   if(Sensor(IN_2) < 55)
-   {
-       test = 1;
-   }
-   
-   if(test == 1){
-     OnFwd(OUT_AC, 100);
-     Wait(1000);
-     test = 2;
-   }
-   
-   if(test == 2){
-     OnRevSync(OUT_AC, 50, -100);
-     Wait(1200);
-     OnRev(OUT_AC,50);
-     Wait(1000);
-     OnRevSync(OUT_AC, 50, 100);
-     Wait(1200);
-     test = 0;
-   }
-   if(test == 3){
-     OnFwd(OUT_AC, 50);
-     Wait(900);
-     OnFwd(OUT_B, 40);
-     break;
-   }
- }
 
- /*
- * OnRevSync e OnFwdSync: rotaciona os motores sincronizados
- * o 3° paramétro "turnpct" define a taxa de rotação das rodas:
- * 100 rotaciona o robô para direita, no próprio eixo.
- * -100 rotaciona o robô para esquerda, no próprio eixo.
- */
- 
- //OnRevSync(OUT_AC, 50, -100);
+    OnRevSync(OUT_AC, 50, 0);
 
- //}
+    while(true)
+    {
+        //TextOut(0, LCD_LINE3, "ultrassonico: " + NumToStr(SensorUS(IN_4)), true);
+        if(Sensor(IN_2) < 55 && comObjeto && lightState)
+        {
+            state = 6;
+            Off(OUT_AC);
+        }
+        else if(Sensor(IN_2) < 55 && !comObjeto && lightState)
+        {
+            state = 1;
+            Off(OUT_AC);
+        }
+
+        if(Sensor(IN_2) > 75)
+        {
+         Wait(300);
+         if(pratas == 1)
+         {
+          state = 2;
+          Off(OUT_AC);
+         } else if(pratas == 2)
+         {
+           state = 7;
+         } else if(pratas == 4)
+         {
+           state = 13;
+         }
+         pratas = pratas + 1;
+        }
+
+        switch (state)
+        {
+        case 0:
+            break;
+        case 1: //Encontrou linha preta
+            OnFwdSync(OUT_AC, 50, 0);
+            aux1 = dist - 3;
+            while(dist > aux1){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, -100);
+            while(deltaDeg < 85){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 0);
+            aux1 = dist + 5;
+            while(dist < aux1){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 100);
+            while(deltaDeg > 5){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 0);
+            state = 0;
+            break;
+        case 2: //Estoque
+            OnRevSync(OUT_AC, 24, 0);
+            while(Sensor(IN_1) != 1){}
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 24, -100);
+            while(deltaDeg < 70){}
+            Off(OUT_AC);
+            Wait(100);
+            state = 3;
+            break;
+        case 3: //Scanner e busca caixa
+            Off(OUT_AC);
+            OnRevSync(OUT_AC, 30, -100);
+            Wait(200);
+            while(SensorUS(IN_4) > 30 && deltaDeg < 200){};
+            if(deltaDeg > 200)
+            {
+             OnRevSync(OUT_AC, 50, 100);
+             while(deltaDeg > 120){}
+             PlaySound(SOUND_FAST_UP);
+             Off(OUT_AC);
+             Wait(100);
+             state = 5;
+             break;
+            } else {
+             Off(OUT_AC);
+             Wait(200);
+             distObj = SensorUS(IN_4);
+             OnRevSync(OUT_AC, 30, -100);
+             PlaySound(SOUND_UP);
+             Wait(100);
+             Off(OUT_AC);
+             state = 4;
+             break;
+            }
+        case 4: //Encontra e pega caixa
+            Off(OUT_AC);
+            if(distObj > 30)
+            {
+             distObj = 20;
+            }
+            Wait(500);
+            aux2 = deltaDeg + 180;
+            OnRevSync(OUT_AC, 30, -100);
+            while(deltaDeg < aux2){}
+            Off(OUT_AC);
+            PlaySound(SOUND_UP);
+            OnRev(OUT_B, 30);
+            while(abs(degB) < 70){}
+            Off(OUT_B);
+            aux1 = dist - (distObj + 22);
+            OnFwdSync(OUT_AC, 50, 0);
+            while(dist > aux1){}
+            Off(OUT_AC);
+            OnFwd(OUT_B, 30);
+            while(abs(degB) > 10){}
+            Off(OUT_B);
+            aux1 = dist + (distObj - 10);
+            OnRevSync(OUT_AC, 50, 0);
+            while(dist < aux1){}
+            Off(OUT_AC);
+            OnRevSync(OUT_AC, 50, 100);
+            while(deltaDeg > 200){}
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 50, 0);
+            state = 0;
+            comObjeto = true;
+            break;
+        case 5: //Anda para frente e volta a procurar
+            OnRevSync(OUT_AC, 50, 0);
+            aux1 = dist + 7;
+            while(dist < aux1){}
+            Off(OUT_AC);
+            Wait(300);
+            state = 3;
+            break;
+        case 6: //Sai do estoque
+            OnFwdSync(OUT_AC, 50, 0);
+            aux1 = dist - 3;
+            while(dist > aux1){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, -100);
+            while(deltaDeg < 280){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 0);
+            aux1 = dist + 10;
+            while(dist < aux1){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 100);
+            while(deltaDeg > 190){}
+            Off(OUT_AC);
+            Wait(300);
+            OnRevSync(OUT_AC, 50, 0);
+            state = 0;
+            break;
+         case 7:  //Define onde saiu
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 50, 0);
+            aux1 = dist + 30;
+            while(dist < aux1){}
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 50, -100);
+            while(deltaDeg < 265){}
+            Off(OUT_AC);
+            if(SensorUS(IN_4) > 20 && SensorUS(IN_4) < 90)
+            {
+             state = 8;
+            } else
+            {
+             OnRevSync(OUT_AC, 50, 100);
+             while(deltaDeg > 85){}
+             Off(OUT_AC);
+             state = 9;
+            }
+            break;
+         case 8: //Encontra caixa em baixo
+            aux1 = dist;
+            OnRevSync(OUT_AC, 50, 0);
+            while(SENSOR_1 != 1 && Sensor(IN_2) > 55 && Sensor(IN_2) < 75) {}
+            if(SENSOR_1 == 1){
+             Off(OUT_AC);
+             Wait(100);
+             OnFwdSync(OUT_AC, 50, 0);
+             while(dist > (aux1 - 15)){}
+             Off(OUT_AC);
+             Wait(100);
+             OnRevSync(OUT_AC, 50, 100);
+             while(deltaDeg > 180){}
+             Off(OUT_AC);
+             Wait(100);
+             OnRevSync(OUT_AC, 50, 0);
+             aux1 = dist + 15;
+             while(dist < aux1){}
+             Off(OUT_AC);
+             Wait(100);
+             OnRevSync(OUT_AC, 50, -100);
+             while(deltaDeg < 270){}
+             Off(OUT_AC);
+             Wait(100);
+            } else if(Sensor(IN_2) < 55){
+               OnFwdSync(OUT_AC, 50, 0);
+               aux1 = dist - 3;
+               while(dist > aux1){}
+               Off(OUT_AC);
+               Wait(300);
+               OnRevSync(OUT_AC, 50, 100);
+               while(deltaDeg > 180){}
+               Off(OUT_AC);
+               Wait(100);
+               OnRevSync(OUT_AC, 50, 0);
+               aux1 = dist + 5;
+               while(dist < aux1){}
+               Off(OUT_AC);
+               Wait(100);
+               OnRevSync(OUT_AC, 50, -100);
+               while(deltaDeg < 270){}
+               Off(OUT_AC);
+               Wait(100);
+            } else if(Sensor(IN_2) > 70)
+            {
+               Off(OUT_AC);
+               TextOut(0, LCD_LINE3, "Entrou");
+               state = 10;
+            }
+            break;
+         case 9:
+            //simétrico ao 8;
+            break;
+         case 10: //caixa larga objeto
+            Wait(500);
+            OnRevSync(OUT_AC, 50, 0);
+            SetSensorLight(IN_2, false);
+            lightState = false;
+            aux1 = dist + 15;
+            while(aux1 > dist && state == 10)
+            {
+             if(Sensor(IN_2) < 33)
+             {
+              int i = 0, biggest = 0, sensorVal = 0;
+              bool j = true;
+              while(j){
+               while(i < 100){
+                i = i + 1;
+                sensorVal = Sensor(IN_2);
+                if(biggest < sensorVal){
+                 biggest = sensorVal;
+                }
+               }
+               TextOut(0, LCD_LINE1, "Maior: " + NumToStr(biggest));
+               TextOut(0, LCD_LINE2, "Luz: " + NumToStr(Sensor(IN_2)));
+               if(biggest >= redOff && biggest < (whiteOff - 1)){
+                TextOut(0, LCD_LINE3, "Vermelho :(");
+                TextOut(0, LCD_LINE4, "State: 12");
+                state = 12;
+               } else if(biggest >= whiteOff){
+                TextOut(0, LCD_LINE3, "Branco :D");
+               }
+               j = false;
+              }
+              
+             }
+            }
+            if(state == 10){
+             TextOut(0, LCD_LINE4, "State: 11");
+             state = 11;
+            }
+            break;
+         case 11:
+            Off(OUT_AC);
+            SetSensorLight(IN_2, true);
+            lightState = true;
+            Wait(500);
+            OnRevSync(OUT_AC, 50, 100);
+            while(deltaDeg > 95){}
+            Off(OUT_AC);
+            PlaySound(SOUND_UP);
+            OnRev(OUT_B, 30);
+            while(abs(degB) < 70){}
+            Off(OUT_B);
+            aux1 = dist + 15;
+            OnRevSync(OUT_AC, 50, 0);
+            while(dist < aux1){}
+            OnFwd(OUT_B, 30);
+            while(abs(degB) > 10){}
+            Off(OUT_ABC);
+            OnRevSync(OUT_AC, 50, -100);
+            while(deltaDeg < 180){}
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 50, 0);
+            state = 0;
+            comObjeto = false;
+            break;
+         case 12:
+            SetSensorLight(IN_2, true);
+            lightState = true;
+            Wait(500);
+            TextOut(0, LCD_LINE5, "To no 12");
+            PlaySound(SOUND_FAST_UP);
+            OnFwdSync(OUT_AC, 50, 0);
+            while(dist > (aux1 - 50)){}
+            Off(OUT_AC);
+            Wait(100);
+            //aux2 = deltaDeg + 180;
+            OnRevSync(OUT_AC, 50, 100);
+            while(deltaDeg > 90){}
+            Off(OUT_AC);
+            Wait(100);
+            state = 8;
+            break;
+         case 13:
+            OnRevSync(OUT_AC, 50, 0);
+            while(SENSOR_1 != 1){}
+            Off(OUT_AC);
+            Wait(100);
+            OnRevSync(OUT_AC, 30, 100);
+            while(deltaDeg > 0){}
+            Off(OUT_AC);
+            Wait(100);
+            state = 0;
+            break;
+        }
+    }
 }
+
+
